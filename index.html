@@ -1011,13 +1011,16 @@
 </head>
 
 <body>
+    <!-- Sentinel for Navbar Observer (Performance Optimization) -->
+    <div id="navbar-sentinel"
+        style="position: absolute; top: 0; height: 50px; width: 100%; pointer-events: none; visibility: hidden;"></div>
 
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-content">
-            <a href="#" class="logo">
-                <img src="assets/img/Logo.webp" alt="Schoolera Logo"
-                    onerror="this.src='https://placehold.co/40x40?text=S'">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Logo.webp" alt="Schoolera Logo" width="120" height="120"
+                    onerror="this.src='https://placehold.co/40x40?text=S'" style="height: 60px; width: auto;">
                 <span class="logo-text">Schoolera</span>
             </a>
             <div class="nav-links">
@@ -1572,8 +1575,8 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/img/Logo.webp" alt="Schoolera Logo" loading="lazy"
-                    style="height: 30px; vertical-align: middle;"> Schoolera
+                <img src="assets/img/Logo.webp" alt="Schoolera Logo" loading="lazy" width="120" height="120"
+                    style="height: 30px; vertical-align: middle; width: auto;"> Schoolera
             </div>
             <p>&copy; 2026 Schoolera. جميع الحقوق محفوظة.</p>
             <div class="social-links">

@@ -37,25 +37,25 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Navbar Scroll Effect (Optimized with requestAnimationFrame)
+    // Navbar Scroll Effect (Optimized with IntersectionObserver - Zero Reflow)
     const navbar = document.querySelector('.navbar');
-    let ticking = false;
+    const sentinel = document.getElementById('navbar-sentinel');
 
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                if (window.scrollY > 50) {
-                    navbar.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
-                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                } else {
-                    navbar.style.boxShadow = 'none';
-                    navbar.style.background = 'rgba(255, 255, 255, 0.8)';
-                }
-                ticking = false;
-            });
-            ticking = true;
-        }
-    });
+    if (sentinel) {
+        const navObserver = new IntersectionObserver((entries) => {
+            if (!entries[0].isIntersecting) {
+                // Scrolled down past sentinel
+                navbar.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                // Back at top
+                navbar.style.boxShadow = 'none';
+                navbar.style.background = 'rgba(255, 255, 255, 0.8)';
+            }
+        }, { threshold: 0 });
+
+        navObserver.observe(sentinel);
+    }
 
     // Showcase Tabs
     window.showTab = function (tabId) {
