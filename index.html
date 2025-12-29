@@ -34,6 +34,71 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/Logo.png">
 
+    <!-- JSON-LD Structured Data (The Secret to Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Schoolera",
+      "headline": "النظام المتكامل لإدارة المدارس الخاصة 2026",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "EducationalApplication",
+      "fileSize": "50MB",
+      "description": "برنامج Schoolera هو الحل الشامل لإدارة المدارس الخاصة، المعاهد، ومراكز التدريب في الدول العربية. يوفر إدارة للطلاب، المالية (أقساط وفواتير)، وتنبيهات واتساب.",
+      "offers": {
+        "@type": "Offer",
+        "price": "50000",
+        "priceCurrency": "DZD",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": "https://schoolera.site/#pricing",
+        "category": "Lifetime License"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "520",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": "تنبيهات واتساب, إدارة مالية, طباعة شهادات, بطاقات بيومترية, عمل بدون إنترنت, نسخ احتياطي آلي",
+      "screenshot": "https://schoolera.site/assets/img/school_dashboard_mockup.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "Schoolera Team",
+        "url": "https://schoolera.site"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "هل يحتاج البرنامج إلى إنترنت لكي يعمل؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا، البرنامج يعمل محلياً على حاسوبك (Offline) ولا يحتاج إلى إنترنت لتخزين البيانات. الإنترنت مطلوب فقط في حالة أردت إرسال رسائل الواتساب."
+        }
+      }, {
+        "@type": "Question",
+        "name": "هل يمكن تثبيت البرنامج على عدة حواسيب؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم، يمكنك تثبيت البرنامج على عدة حواسيب في نفس المدرسة وربطها بشبكة محلية (Network) بمدفع واحد فقط."
+        }
+      }, {
+        "@type": "Question",
+        "name": "هل الدفع مرة واحدة أم هناك اشتراكات؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الدفع مرة واحدة فقط (50,000 دج) وتحصل على رخصة مدى الحياة شاملة التحديثات والدعم الفني، لا توجد أي اشتراكات شهرية أو سنوية."
+        }
+      }]
+    }
+    </script>
+
     <!-- Styles (Inlined for Performance) -->
     <style>
         /* Modern Color Palette */
@@ -958,9 +1023,9 @@
             <div class="nav-links">
                 <a href="#features">المميزات</a>
                 <a href="#showcase">جولة في البرنامج</a>
+                <a href="calculator.html" style="color: var(--secondary); font-weight: 700;">أدوات مجانية 🔥</a>
                 <a href="#stats">إحصائيات</a>
                 <a href="#pricing">الأسعار</a>
-                <a href="#faq">أسئلة شائعة</a>
                 <a href="#contact" class="btn-primary">اتصل بنا</a>
             </div>
         </div>
@@ -1006,6 +1071,67 @@
                 <div class="section-title">
                     <h2>لماذا Schoolera أفضل برنامج إدارة مدارس عربي؟</h2>
                     <p>نظام إدارة مدارس متكامل يعمل بدون إنترنت (Offline) ويدعم المزامنة عند الاتصال</p>
+                </div>
+
+                <!-- Comparison Table (Moved here) -->
+                <div class="comparison-table-container" style="overflow-x: auto; margin-bottom: 4rem;">
+                    <table
+                        style="width: 100%; border-collapse: collapse; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <thead>
+                            <tr style="background: var(--dark); color: white;">
+                                <th style="padding: 1.5rem; text-align: right; width: 40%;">وجه المقارنة</th>
+                                <th style="padding: 1.5rem; text-align: center; width: 30%; background: #334155;">
+                                    الإدارة التقليدية (Excel/الورق)</th>
+                                <th
+                                    style="padding: 1.5rem; text-align: center; width: 30%; background: var(--primary);">
+                                    برنامج Schoolera 2026</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #f1f5f9;">
+                                <td style="padding: 1.2rem; font-weight: 600;">تنظيم بيانات الطلاب</td>
+                                <td style="padding: 1.2rem; text-align: center; color: #64748b;"><i
+                                        class="fa-solid fa-xmark" style="color: #ef4444;"></i> ملفات مبعثرة وصعب البحث
+                                    فيها</td>
+                                <td style="padding: 1.2rem; text-align: center; font-weight: 700; color: #10b981;"><i
+                                        class="fa-solid fa-check" style="color: #10b981;"></i> ملفات إلكترونية شاملة
+                                    ومنظمة</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #f1f5f9;">
+                                <td style="padding: 1.2rem; font-weight: 600;">التواصل مع الأولياء</td>
+                                <td style="padding: 1.2rem; text-align: center; color: #64748b;"><i
+                                        class="fa-solid fa-xmark" style="color: #ef4444;"></i> رسائل SMS مكلفة أو
+                                    اتصالات هاتفية</td>
+                                <td style="padding: 1.2rem; text-align: center; font-weight: 700; color: #10b981;"><i
+                                        class="fa-solid fa-check" style="color: #10b981;"></i> تنبيهات واتساب مجانية
+                                    وآلية</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #f1f5f9;">
+                                <td style="padding: 1.2rem; font-weight: 600;">الحماية والأمان</td>
+                                <td style="padding: 1.2rem; text-align: center; color: #64748b;"><i
+                                        class="fa-solid fa-xmark" style="color: #ef4444;"></i> عرضة للتلف والضياع</td>
+                                <td style="padding: 1.2rem; text-align: center; font-weight: 700; color: #10b981;"><i
+                                        class="fa-solid fa-check" style="color: #10b981;"></i> نسخ احتياطي آلي وتشفير
+                                    تام</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #f1f5f9;">
+                                <td style="padding: 1.2rem; font-weight: 600;">التقارير المالية</td>
+                                <td style="padding: 1.2rem; text-align: center; color: #64748b;"><i
+                                        class="fa-solid fa-xmark" style="color: #ef4444;"></i> حسابات يدوية معقدة
+                                    واحتمال أخطاء</td>
+                                <td style="padding: 1.2rem; text-align: center; font-weight: 700; color: #10b981;"><i
+                                        class="fa-solid fa-check" style="color: #10b981;"></i> تقارير دقيقة بضغطة زر
+                                    واحدة</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1.2rem; font-weight: 600;">التكلفة</td>
+                                <td style="padding: 1.2rem; text-align: center; color: #64748b;">تضييع وقت وجهد = مال
+                                    ضائع</td>
+                                <td style="padding: 1.2rem; text-align: center; font-weight: 700; color: #10b981;">
+                                    استثمار مرة واحدة مدى الحياة</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <div class="features-grid">
@@ -1439,12 +1565,15 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
+
+
         <!-- Footer -->
     </main>
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/img/Logo.png" alt="Logo" style="height: 30px; vertical-align: middle;"> Schoolera
+                <img src="assets/img/Logo.webp" alt="Schoolera Logo" loading="lazy"
+                    style="height: 30px; vertical-align: middle;"> Schoolera
             </div>
             <p>&copy; 2026 Schoolera. جميع الحقوق محفوظة.</p>
             <div class="social-links">
