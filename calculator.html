@@ -24,11 +24,16 @@
     <link rel="icon" type="image/png" href="assets/img/Logo.png">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2"
+        as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/vendor/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="assets/vendor/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+        crossorigin>
+
+    <!-- Local Google Fonts (Zero Blocking) -->
+    <link href="assets/vendor/google-fonts/fonts.css" rel="stylesheet">
 
     <!-- Deferred Font Awesome (Local with font-display: swap) -->
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" media="print" onload="this.media='all'">
@@ -37,158 +42,7 @@
     </noscript>
 
     <!-- Inline Styles (Copied from index.html for consistency) -->
-    <style>
-        :root {
-            --primary: #4F46E5;
-            --primary-dark: #4338ca;
-            --secondary: #ec4899;
-            --accent: #8b5cf6;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --gray: #475569;
-            --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Cairo', 'Poppins', sans-serif;
-            background-color: #f1f5f9;
-            color: var(--dark);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 1rem 0;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .navbar-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--primary);
-        }
-
-        .logo img {
-            height: 60px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray);
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        /* Buttons */
-        .btn-primary {
-            display: inline-block;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-        }
-
-        /* Section */
-        .section {
-            padding: 100px 0;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .features-list {
-            list-style: none;
-            margin-top: 2rem;
-        }
-
-        .features-list li {
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .features-list i {
-            color: var(--primary);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-            margin-top: auto;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-        }
-    </style>
+    <style>:root{--primary:#4F46E5;--primary-dark:#4338ca;--secondary:#ec4899;--accent:#8b5cf6;--dark:#0f172a;--light:#f8fafc;--gray:#475569;--shadow:0 10px 30px -10px rgba(0,0,0,0.1)} *{margin:0;padding:0;box-sizing:border-box} body{font-family:'Cairo','Poppins',sans-serif;background-color:#f1f5f9;color:var(--dark);line-height:1.6} .container{max-width:1200px;margin:0 auto;padding:0 2rem} .navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:1rem 0;background:rgba(255,255,255,0.8);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.05)} .navbar-content{display:flex;justify-content:space-between;align-items:center} .logo{display:flex;align-items:center;gap:0.5rem;text-decoration:none;font-size:1.5rem;font-weight:900;color:var(--primary)} .logo img{height:60px} .nav-links{display:flex;gap:1.5rem;align-items:center} .nav-links a{text-decoration:none;color:var(--gray);font-weight:600;transition:color 0.3s} .nav-links a:hover{color:var(--primary)} .btn-primary{display:inline-block;padding:1rem 2rem;border-radius:50px;font-weight:600;text-decoration:none;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;box-shadow:0 4px 15px rgba(79,70,229,0.4);border:none;cursor:pointer} .btn-primary:hover{transform:translateY(-2px)} .section{padding:100px 0} .section-title h2{font-size:2.5rem;margin-bottom:1rem} .features-list{list-style:none;margin-top:2rem} .features-list li{margin-bottom:1rem;display:flex;align-items:center;gap:10px} .features-list i{color:var(--primary)} footer{background:var(--dark);color:white;padding:3rem 0;text-align:center;margin-top:auto} .footer-content{display:flex;justify-content:space-between;align-items:center} @media (max-width:768px){.nav-links{display:none} .footer-content{flex-direction:column;gap:1.5rem} }</style>
 </head>
 
 <body>
