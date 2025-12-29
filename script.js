@@ -37,15 +37,23 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Navbar Scroll Effect
+    // Navbar Scroll Effect (Optimized with requestAnimationFrame)
     const navbar = document.querySelector('.navbar');
+    let ticking = false;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        } else {
-            navbar.style.boxShadow = 'none';
-            navbar.style.background = 'rgba(255, 255, 255, 0.8)';
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                if (window.scrollY > 50) {
+                    navbar.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                } else {
+                    navbar.style.boxShadow = 'none';
+                    navbar.style.background = 'rgba(255, 255, 255, 0.8)';
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
     });
 
