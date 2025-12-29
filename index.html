@@ -36,12 +36,19 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <!-- Font Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Deferred Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 </head>
 
 <body>
@@ -50,7 +57,7 @@
     <nav class="navbar">
         <div class="container navbar-content">
             <a href="#" class="logo">
-                <img src="assets/img/Logo.png" alt="Schoolera Logo"
+                <img src="assets/img/Logo.webp" alt="Schoolera Logo" width="150" height="150"
                     onerror="this.src='https://placehold.co/40x40?text=S'">
                 <span class="logo-text">Schoolera</span>
             </a>
@@ -84,9 +91,9 @@
             </div>
             <div class="hero-image-container">
                 <div class="hero-image-bg"></div>
-                <!-- Used the generated dashboard mockup here -->
-                <img src="assets/img/school_dashboard_mockup.png" alt="Schoolera Dashboard 2026"
-                    class="hero-img floating-anim">
+                <!-- Used WebP and explicit dimensions -->
+                <img src="assets/img/school_dashboard_mockup.webp" alt="Schoolera Dashboard 2026" width="800"
+                    height="460" class="hero-img floating-anim">
                 <!-- Decorative Elements -->
                 <div class="float-card card-1"><i class="fa-brands fa-whatsapp"></i> إرسال آلي للفواتير</div>
                 <div class="float-card card-2"><i class="fa-solid fa-chart-pie"></i> إحصائيات 2026</div>
@@ -184,7 +191,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/Student.png" alt="إدارة الطلاب" class="app-screenshot">
+                            <img src="assets/img/Student.webp" alt="إدارة الطلاب" width="600" height="350"
+                                class="app-screenshot">
                         </div>
                     </div>
                 </div>
@@ -202,7 +210,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/Finance.png" alt="الإدارة المالية" class="app-screenshot">
+                            <img src="assets/img/Finance.webp" alt="الإدارة المالية" width="600" height="350"
+                                class="app-screenshot">
                         </div>
                     </div>
                 </div>
@@ -219,7 +228,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/prof.png" alt="إدارة الأساتذة" class="app-screenshot">
+                            <img src="assets/img/prof.webp" alt="إدارة الأساتذة" width="600" height="350"
+                                class="app-screenshot">
                         </div>
                     </div>
                 </div>
@@ -236,7 +246,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/Formation.png" alt="إدارة الدورات" class="app-screenshot">
+                            <img src="assets/img/Formation.webp" alt="إدارة الدورات" width="600" height="350"
+                                class="app-screenshot">
                         </div>
                     </div>
                 </div>
@@ -254,8 +265,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/config.png" alt="إعدادات البرنامج" class="app-screenshot"
-                                onerror="this.src='assets/img/school_dashboard_mockup.png'">
+                            <img src="assets/img/config.webp" alt="إعدادات البرنامج" width="600" height="350"
+                                class="app-screenshot" onerror="this.src='assets/img/school_dashboard_mockup.webp'">
                         </div>
                     </div>
                 </div>
