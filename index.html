@@ -44,7 +44,8 @@
             --accent: #8b5cf6;
             --dark: #0f172a;
             --light: #f8fafc;
-            --gray: #64748b;
+            /* Darker gray for better contrast (AA Standard) */
+            --gray: #475569;
             --surface: rgba(255, 255, 255, 0.9);
             --glass: rgba(255, 255, 255, 0.7);
             --border: rgba(255, 255, 255, 0.2);
@@ -965,434 +966,445 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <span class="badge">الإصدار الاحترافي 2026</span>
-                <h1>حوّل مدرستك إلى مؤسسة ذكية مع <br><span class="gradient-text">Schoolera 2026</span></h1>
-                <p>البرنامج رقم 1 في الجزائر لإدارة المدارس الخاصة، المعاهد، ومراكز التدريب. إدارة شاملة للطلاب،
-                    المعلمين، والمالية مع تنبيهات ذكية عبر الواتساب وتقارير دقيقة.</p>
-                <div class="hero-buttons">
-                    <a href="#pricing" class="btn-primary pulse-anim">احصل عليه الآن بـ 50,000 دج</a>
-                    <a href="#showcase" class="btn-secondary">شاهد صور البرنامج</a>
-                </div>
-                <div class="trust-badge">
-                    <i class="fa-solid fa-check-circle"></i> ضمان مدى الحياة
-                    <i class="fa-solid fa-check-circle"></i> دعم فني 24/7
-                </div>
-            </div>
-            <div class="hero-image-container">
-                <div class="hero-image-bg"></div>
-                <!-- Used WebP and explicit dimensions -->
-                <img src="assets/img/school_dashboard_mockup.webp" alt="Schoolera Dashboard 2026" width="800"
-                    height="460" class="hero-img floating-anim">
-                <!-- Decorative Elements -->
-                <div class="float-card card-1"><i class="fa-brands fa-whatsapp"></i> إرسال آلي للفواتير</div>
-                <div class="float-card card-2"><i class="fa-solid fa-chart-pie"></i> إحصائيات 2026</div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Detailed Features Grid -->
-    <section id="features" class="section bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>لماذا تختار Schoolera 2026؟</h2>
-                <p>أكثر من 50 خاصية مذهلة لتسهيل عملك اليومي</p>
-            </div>
-
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card" data-aos="fade-up">
-                    <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
-                    <h3>تنبيهات واتساب الذكية</h3>
-                    <p>أرسل وصولات الدفع، تذكيرات الأقساط، وتقارير الحضور والغياب مباشرة إلى هواتف أولياء الأمور. وفر
-                        تكاليف الرسائل القصيرة واستخدم التقنية الأقرب لعملائك.</p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                    <h3>نظام مالي واحترافي</h3>
-                    <p>تتبع المداخيل، المصاريف، والأرباح الصافية. إدارة نظم الدفع بالتقسيط (شهري/أسبوعي) مع تنبيهات
-                        للمتأخرات وإصدار فواتير آلية.</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
-                    <h3>شهادات وبطاقات بيومترية</h3>
-                    <p>4 قوالب شهادات فاخرة جاهزة للتخصيص. طباعة بطاقات طلاب احترافية تحتوي على رمز QR Code لتسجيل
-                        الحضور السريع ومتابعة الطلاب.</p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3>لوحة تحكم تفاعلية 2026</h3>
-                    <p>راقب نمو مؤسستك لحظة بلحظة. رسوم بيانية للمداخيل الشهرية، نسب الحضور، وتوزيع الطلاب حسب الأفواج
-                        والدورات التدريبية.</p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box"><i class="fa-solid fa-database"></i></div>
-                    <h3>أمان ونسخ احتياطي آلي</h3>
-                    <p>لا تقلق على بياناتك. النظام يقوم بنسخ احتياطي يومي تلقائي لقاعدة البيانات. تشفير تام لكل
-                        المعلومات الحساسة وسجل دخول للموظفين.</p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
-                    <h3>إدارة شؤون الطلاب والأساتذة</h3>
-                    <p>ملفات شاملة لكل طالب وأستاذ. تتبع السيرة الذاتية، مدفوعات الرواتب، الغيابات، والملاحظات الإدارية
-                        في واجهة واحدة بسيطة.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW: App Showcase / Modules Section -->
-    <section id="showcase" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>جولة داخل البرنامج</h2>
-                <p>واجهات عصرية، سهلة الاستخدام، ومصممة خصيصاً للمؤسسات الجزائرية</p>
-            </div>
-
-            <div class="showcase-tabs">
-                <button class="tab-btn active" onclick="showTab('students')">الطلاب</button>
-                <button class="tab-btn" onclick="showTab('finance')">المالية</button>
-                <button class="tab-btn" onclick="showTab('teachers')">الأساتذة</button>
-                <button class="tab-btn" onclick="showTab('courses')">الدورات</button>
-                <button class="tab-btn" onclick="showTab('settings')">الإعدادات</button>
-            </div>
-
-            <div class="showcase-content">
-                <!-- Students Tab -->
-                <div id="students" class="tab-content active">
-                    <div class="tab-grid">
-                        <div class="tab-text">
-                            <h3>تسيير ملفات الطلاب باحترافية</h3>
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i> تسجيل سريع للطلاب مع صورة شخصية.</li>
-                                <li><i class="fa-solid fa-check"></i> طباعة بطاقة الطالب فوراً.</li>
-                                <li><i class="fa-solid fa-check"></i> متابعة الغيابات والتأخرات.</li>
-                                <li><i class="fa-solid fa-check"></i> أرشيف كامل للوثائق والملفات.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-image">
-                            <img src="assets/img/Student.webp" alt="إدارة الطلاب" width="600" height="350"
-                                class="app-screenshot">
-                        </div>
+    <main>
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">الإصدار الاحترافي 2026</span>
+                    <h1>حوّل مدرستك إلى مؤسسة ذكية مع <br><span class="gradient-text">Schoolera 2026</span></h1>
+                    <p>البرنامج رقم 1 في الجزائر لإدارة المدارس الخاصة، المعاهد، ومراكز التدريب. إدارة شاملة للطلاب،
+                        المعلمين، والمالية مع تنبيهات ذكية عبر الواتساب وتقارير دقيقة.</p>
+                    <div class="hero-buttons">
+                        <a href="#pricing" class="btn-primary pulse-anim">احصل عليه الآن بـ 50,000 دج</a>
+                        <a href="#showcase" class="btn-secondary">شاهد صور البرنامج</a>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fa-solid fa-check-circle"></i> ضمان مدى الحياة
+                        <i class="fa-solid fa-check-circle"></i> دعم فني 24/7
                     </div>
                 </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-bg"></div>
+                    <!-- Used WebP and explicit dimensions -->
+                    <img src="assets/img/school_dashboard_mockup.webp" alt="Schoolera Dashboard 2026" width="800"
+                        height="460" class="hero-img floating-anim">
+                    <!-- Decorative Elements -->
+                    <div class="float-card card-1"><i class="fa-brands fa-whatsapp"></i> إرسال آلي للفواتير</div>
+                    <div class="float-card card-2"><i class="fa-solid fa-chart-pie"></i> إحصائيات 2026</div>
+                </div>
+            </div>
+        </header>
 
-                <!-- Finance Tab -->
-                <div id="finance" class="tab-content">
-                    <div class="tab-grid">
-                        <div class="tab-text">
-                            <h3>التحكم المالي الكامل</h3>
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i> لوحة قيادة مالية دقيقة.</li>
-                                <li><i class="fa-solid fa-check"></i> إدارة الأقساط والديون.</li>
-                                <li><i class="fa-solid fa-check"></i> حساب أرباح الأساتذة آلياً.</li>
-                                <li><i class="fa-solid fa-check"></i> تقارير يومية وشهرية للمداخيل.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-image">
-                            <img src="assets/img/Finance.webp" alt="الإدارة المالية" width="600" height="350"
-                                class="app-screenshot">
+        <!-- Detailed Features Grid -->
+        <section id="features" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>لماذا تختار Schoolera 2026؟</h2>
+                    <p>أكثر من 50 خاصية مذهلة لتسهيل عملك اليومي</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                        <h3>تنبيهات واتساب الذكية</h3>
+                        <p>أرسل وصولات الدفع، تذكيرات الأقساط، وتقارير الحضور والغياب مباشرة إلى هواتف أولياء الأمور.
+                            وفر
+                            تكاليف الرسائل القصيرة واستخدم التقنية الأقرب لعملائك.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h3>نظام مالي واحترافي</h3>
+                        <p>تتبع المداخيل، المصاريف، والأرباح الصافية. إدارة نظم الدفع بالتقسيط (شهري/أسبوعي) مع تنبيهات
+                            للمتأخرات وإصدار فواتير آلية.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
+                        <h3>شهادات وبطاقات بيومترية</h3>
+                        <p>4 قوالب شهادات فاخرة جاهزة للتخصيص. طباعة بطاقات طلاب احترافية تحتوي على رمز QR Code لتسجيل
+                            الحضور السريع ومتابعة الطلاب.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>لوحة تحكم تفاعلية 2026</h3>
+                        <p>راقب نمو مؤسستك لحظة بلحظة. رسوم بيانية للمداخيل الشهرية، نسب الحضور، وتوزيع الطلاب حسب
+                            الأفواج
+                            والدورات التدريبية.</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box"><i class="fa-solid fa-database"></i></div>
+                        <h3>أمان ونسخ احتياطي آلي</h3>
+                        <p>لا تقلق على بياناتك. النظام يقوم بنسخ احتياطي يومي تلقائي لقاعدة البيانات. تشفير تام لكل
+                            المعلومات الحساسة وسجل دخول للموظفين.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+                        <h3>إدارة شؤون الطلاب والأساتذة</h3>
+                        <p>ملفات شاملة لكل طالب وأستاذ. تتبع السيرة الذاتية، مدفوعات الرواتب، الغيابات، والملاحظات
+                            الإدارية
+                            في واجهة واحدة بسيطة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: App Showcase / Modules Section -->
+        <section id="showcase" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>جولة داخل البرنامج</h2>
+                    <p>واجهات عصرية، سهلة الاستخدام، ومصممة خصيصاً للمؤسسات الجزائرية</p>
+                </div>
+
+                <div class="showcase-tabs">
+                    <button class="tab-btn active" onclick="showTab('students')">الطلاب</button>
+                    <button class="tab-btn" onclick="showTab('finance')">المالية</button>
+                    <button class="tab-btn" onclick="showTab('teachers')">الأساتذة</button>
+                    <button class="tab-btn" onclick="showTab('courses')">الدورات</button>
+                    <button class="tab-btn" onclick="showTab('settings')">الإعدادات</button>
+                </div>
+
+                <div class="showcase-content">
+                    <!-- Students Tab -->
+                    <div id="students" class="tab-content active">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>تسيير ملفات الطلاب باحترافية</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> تسجيل سريع للطلاب مع صورة شخصية.</li>
+                                    <li><i class="fa-solid fa-check"></i> طباعة بطاقة الطالب فوراً.</li>
+                                    <li><i class="fa-solid fa-check"></i> متابعة الغيابات والتأخرات.</li>
+                                    <li><i class="fa-solid fa-check"></i> أرشيف كامل للوثائق والملفات.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="assets/img/Student.webp" alt="إدارة الطلاب" width="600" height="350"
+                                    class="app-screenshot">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Teachers Tab -->
-                <div id="teachers" class="tab-content">
-                    <div class="tab-grid">
-                        <div class="tab-text">
-                            <h3>إدارة الطاقم التربوي</h3>
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i> ملفات شاملة للأساتذة.</li>
-                                <li><i class="fa-solid fa-check"></i> حساب ساعات العمل والرواتب.</li>
-                                <li><i class="fa-solid fa-check"></i> جدول التوقيت الأسبوعي.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-image">
-                            <img src="assets/img/prof.webp" alt="إدارة الأساتذة" width="600" height="350"
-                                class="app-screenshot">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Courses Tab -->
-                <div id="courses" class="tab-content">
-                    <div class="tab-grid">
-                        <div class="tab-text">
-                            <h3>إدارة الدورات والأفواج</h3>
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i> تنظيم الأفواج والمستويات.</li>
-                                <li><i class="fa-solid fa-check"></i> طباعة قوائم الحضور والغياب.</li>
-                                <li><i class="fa-solid fa-check"></i> متابعة تقدم الدروس.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-image">
-                            <img src="assets/img/Formation.webp" alt="إدارة الدورات" width="600" height="350"
-                                class="app-screenshot">
+                    <!-- Finance Tab -->
+                    <div id="finance" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>التحكم المالي الكامل</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> لوحة قيادة مالية دقيقة.</li>
+                                    <li><i class="fa-solid fa-check"></i> إدارة الأقساط والديون.</li>
+                                    <li><i class="fa-solid fa-check"></i> حساب أرباح الأساتذة آلياً.</li>
+                                    <li><i class="fa-solid fa-check"></i> تقارير يومية وشهرية للمداخيل.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="assets/img/Finance.webp" alt="الإدارة المالية" width="600" height="350"
+                                    class="app-screenshot">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Settings Tab -->
-                <div id="settings" class="tab-content">
-                    <div class="tab-grid">
-                        <div class="tab-text">
-                            <h3>إعدادات مرنة تناسب مدرستك</h3>
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i> تخصيص شعار واسم المدرسة.</li>
-                                <li><i class="fa-solid fa-check"></i> إعدادات الطابعة والوصولات.</li>
-                                <li><i class="fa-solid fa-check"></i> إدارة المستخدمين والصلاحيات.</li>
-                                <li><i class="fa-solid fa-check"></i> التحكم في رسائل الواتساب.</li>
-                            </ul>
+                    <!-- Teachers Tab -->
+                    <div id="teachers" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>إدارة الطاقم التربوي</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> ملفات شاملة للأساتذة.</li>
+                                    <li><i class="fa-solid fa-check"></i> حساب ساعات العمل والرواتب.</li>
+                                    <li><i class="fa-solid fa-check"></i> جدول التوقيت الأسبوعي.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="assets/img/prof.webp" alt="إدارة الأساتذة" width="600" height="350"
+                                    class="app-screenshot">
+                            </div>
                         </div>
-                        <div class="tab-image">
-                            <img src="assets/img/config.webp" alt="إعدادات البرنامج" width="600" height="350"
-                                class="app-screenshot" onerror="this.src='assets/img/school_dashboard_mockup.webp'">
+                    </div>
+
+                    <!-- Courses Tab -->
+                    <div id="courses" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>إدارة الدورات والأفواج</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> تنظيم الأفواج والمستويات.</li>
+                                    <li><i class="fa-solid fa-check"></i> طباعة قوائم الحضور والغياب.</li>
+                                    <li><i class="fa-solid fa-check"></i> متابعة تقدم الدروس.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="assets/img/Formation.webp" alt="إدارة الدورات" width="600" height="350"
+                                    class="app-screenshot">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div id="settings" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>إعدادات مرنة تناسب مدرستك</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> تخصيص شعار واسم المدرسة.</li>
+                                    <li><i class="fa-solid fa-check"></i> إعدادات الطابعة والوصولات.</li>
+                                    <li><i class="fa-solid fa-check"></i> إدارة المستخدمين والصلاحيات.</li>
+                                    <li><i class="fa-solid fa-check"></i> التحكم في رسائل الواتساب.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image">
+                                <img src="assets/img/config.webp" alt="إعدادات البرنامج" width="600" height="350"
+                                    class="app-screenshot" onerror="this.src='assets/img/school_dashboard_mockup.webp'">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Detailed Modules List -->
-    <section id="modules-list" class="section bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>خصائص تقنية متقدمة</h2>
-                <p>كل ما تحتاجه لنجاح مدرستك</p>
-            </div>
-            <div class="modules-container">
-                <div class="module-item">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <div>
-                        <h4>إدارة المجموعات والأفواج</h4>
-                        <p>قسّم الطلاب إلى مجموعات وسهّل عملية التفويج وجدول التوقيت.</p>
-                    </div>
+        <!-- Detailed Modules List -->
+        <section id="modules-list" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>خصائص تقنية متقدمة</h2>
+                    <p>كل ما تحتاجه لنجاح مدرستك</p>
                 </div>
-                <div class="module-item">
-                    <i class="fa-solid fa-print"></i>
-                    <div>
-                        <h4>طباعة كشوف النقاط</h4>
-                        <p>استخراج كشوف نقاط مفصلة بتصميم رسمي وجاهز للطباعة.</p>
+                <div class="modules-container">
+                    <div class="module-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <div>
+                            <h3>إدارة المجموعات والأفواج</h3>
+                            <p>قسّم الطلاب إلى مجموعات وسهّل عملية التفويج وجدول التوقيت.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="module-item">
-                    <i class="fa-solid fa-barcode"></i>
-                    <div>
-                        <h4>دعم الباركود (Barcode)</h4>
-                        <p>استخدم قارئ الباركود لتسجيل الحضور وبيع الكتب والمذكرات.</p>
+                    <div class="module-item">
+                        <i class="fa-solid fa-print"></i>
+                        <div>
+                            <h3>طباعة كشوف النقاط</h3>
+                            <p>استخراج كشوف نقاط مفصلة بتصميم رسمي وجاهز للطباعة.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="module-item">
-                    <i class="fa-solid fa-file-export"></i>
-                    <div>
-                        <h4>تصدير واستيراد البيانات</h4>
-                        <p>إمكانية تصدير القوائم إلى Excel و PDF واستيراد الطلاب الجدد.</p>
+                    <div class="module-item">
+                        <i class="fa-solid fa-barcode"></i>
+                        <div>
+                            <h3>دعم الباركود (Barcode)</h3>
+                            <p>استخدم قارئ الباركود لتسجيل الحضور وبيع الكتب والمذكرات.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="module-item">
-                    <i class="fa-solid fa-user-shield"></i>
-                    <div>
-                        <h4>صلاحيات المستخدمين</h4>
-                        <p>حدد صلاحيات مخصصة للمدير، السكرتيرة، والمحاسب لحماية البيانات.</p>
+                    <div class="module-item">
+                        <i class="fa-solid fa-file-export"></i>
+                        <div>
+                            <h3>تصدير واستيراد البيانات</h3>
+                            <p>إمكانية تصدير القوائم إلى Excel و PDF واستيراد الطلاب الجدد.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="module-item">
-                    <i class="fa-solid fa-arrows-rotate"></i>
-                    <div>
-                        <h4>دعم فني وتحديثات</h4>
-                        <p>تحديثات دورية لإضافة خصائص جديدة (نسخة 2026 محدثة).</p>
+                    <div class="module-item">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <div>
+                            <h3>صلاحيات المستخدمين</h3>
+                            <p>حدد صلاحيات مخصصة للمدير، السكرتيرة، والمحاسب لحماية البيانات.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW: Testimonials Section -->
-    <section id="testimonials" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>ماذا يقول عملاؤنا؟</h2>
-                <p>ثقة أكثر من 500 مدرسة عبر الوطن</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"برنامج Schoolera غيّر طريقة عملنا تماماً. أصبحنا نتحكم في المداخيل بشكل أدق، وتنبيهات الواتساب
-                        نالت إعجاب الأولياء كثيراً."</p>
-                    <div class="client-info">
-                        <strong>أحمد بن يحيى</strong>
-                        <span>مدير مدرسة النجاح - الجزائر</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"أفضل استثمار قمنا به. الدعم الفني ممتاز وسريع، والبرنامج سهل الاستخدام جداً حتى للمبتدئين في
-                        الإعلام الآلي."</p>
-                    <div class="client-info">
-                        <strong>سميرة قادري</strong>
-                        <span>معهد اللغات العصرية - وهران</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"خاصية طباعة البطاقات والشهادات وفرت علينا وقتاً طويلاً. شكراً لفريق Schoolera على هذا الإبداع."
-                    </p>
-                    <div class="client-info">
-                        <strong>كمال سعيدي</strong>
-                        <span>أكاديمية المستقبل - سطيف</span>
+                    <div class="module-item">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <div>
+                            <h3>دعم فني وتحديثات</h3>
+                            <p>تحديثات دورية لإضافة خصائص جديدة (نسخة 2026 محدثة).</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section -->
-    <section id="stats" class="section bg-gradient text-white">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>+500</h3>
-                    <p>مدرسة تستخدمه</p>
+        <!-- NEW: Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>ماذا يقول عملاؤنا؟</h2>
+                    <p>ثقة أكثر من 500 مدرسة عبر الوطن</p>
                 </div>
-                <div class="stat-item">
-                    <h3>+100K</h3>
-                    <p>طالب مسجل</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>نسبة الرضا</p>
-                </div>
-                <div class="stat-item">
-                    <h3>24/7</h3>
-                    <p>دعم متواصل</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section pricing-section">
-        <div class="container">
-            <div class="pricing-card">
-                <div class="popular-tag">عرض افتتاح 2026</div>
-                <h2>النسخة الكاملة (Lifetime)</h2>
-                <div class="price">
-                    <span class="currency">دج</span>
-                    <span class="amount">50,000</span>
-                </div>
-                <p class="price-desc">دفعة واحدة، استخدام مدى الحياة بلا اشتراكات شهرية أو سنوية</p>
-
-                <ul class="features-list">
-                    <li><i class="fa-solid fa-check"></i> تفعيل مدى الحياة (Lifetime License)</li>
-                    <li><i class="fa-solid fa-check"></i> تثبيت على عدد غير محدود من الحواسيب (نفس المدرسة)</li>
-                    <li><i class="fa-solid fa-check"></i> جميع التحديثات المستقبلية مجاناً</li>
-                    <li><i class="fa-solid fa-check"></i> دعم فني مخصص عبر الهاتف والواتساب</li>
-                    <li><i class="fa-solid fa-check"></i> دورة تدريبية لطاقم المدرسة على لاستخدام</li>
-                </ul>
-
-                <a href="#contact" class="btn-primary btn-large wobble-ver">اطلب نسختك الآن</a>
-                <p class="money-back"><small>* ضمان استرجاع الأموال في حالة عدم الرضا خلال 30 يوم</small></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW: FAQ Section -->
-    <section id="faq" class="section bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>أسئلة شائعة</h2>
-                <p>إجابات على استفساراتكم المتكررة</p>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <h4>هل يحتاج البرنامج إلى إنترنت لكي يعمل؟ <i class="fa-solid fa-chevron-down"></i></h4>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"برنامج Schoolera غيّر طريقة عملنا تماماً. أصبحنا نتحكم في المداخيل بشكل أدق، وتنبيهات
+                            الواتساب
+                            نالت إعجاب الأولياء كثيراً."</p>
+                        <div class="client-info">
+                            <strong>أحمد بن يحيى</strong>
+                            <span>مدير مدرسة النجاح - الجزائر</span>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>لا، البرنامج يعمل محلياً على حاسوبك ولا يحتاج إلى إنترنت لتخزين البيانات. الإنترنت مطلوب فقط
-                            في حالة أردت إرسال رسائل الواتساب.</p>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"أفضل استثمار قمنا به. الدعم الفني ممتاز وسريع، والبرنامج سهل الاستخدام جداً حتى للمبتدئين في
+                            الإعلام الآلي."</p>
+                        <div class="client-info">
+                            <strong>سميرة قادري</strong>
+                            <span>معهد اللغات العصرية - وهران</span>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <h4>هل يمكن تثبيت البرنامج على عدة حواسيب؟ <i class="fa-solid fa-chevron-down"></i></h4>
-                    </div>
-                    <div class="faq-answer">
-                        <p>نعم، يمكنك تثبيت البرنامج على عدة حواسيب في نفس المدرسة وربطها بشبكة محلية (Network) بمدفع
-                            واحد فقط.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <h4>ماذا يحدث إذا تعطل حاسوبي؟ هل أفقد بياناتي؟ <i class="fa-solid fa-chevron-down"></i></h4>
-                    </div>
-                    <div class="faq-answer">
-                        <p>لا، البرنامج يقوم بنسخ احتياطي آلي (Backup) لقاعدة البيانات يومياً. يمكنك استرجاع بياناتك
-                            بسهولة على أي حاسوب جديد.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <h4>هل الدفع مرة واحدة أم هناك اشتراكات؟ <i class="fa-solid fa-chevron-down"></i></h4>
-                    </div>
-                    <div class="faq-answer">
-                        <p>الدفع مرة واحدة فقط (50,000 دج) وتحصل على رخصة مدى الحياة شاملة التحديثات والدعم الفني، لا
-                            توجد أي اشتراكات شهرية أو سنوية.</p>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"خاصية طباعة البطاقات والشهادات وفرت علينا وقتاً طويلاً. شكراً لفريق Schoolera على هذا
+                            الإبداع."
+                        </p>
+                        <div class="client-info">
+                            <strong>كمال سعيدي</strong>
+                            <span>أكاديمية المستقبل - سطيف</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container contact-container">
-            <div class="section-title">
-                <h2>تواصل معنا</h2>
-                <p>فريقنا جاهز للإجابة على استفساراتكم وتثبيت البرنامج</p>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <h3>اتصل بنا</h3>
-                    <p class="contact-text">0660639890</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>العنوان</h3>
-                    <p class="contact-text">الجزائر باتنة</p>
-                    <p class="contact-text">مفتوح يومياً 09:00 - 17:00</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>البريد الإلكتروني</h3>
-                    <p class="contact-text">aichi.yacine@gmail.com</p>
+        <!-- Stats Section -->
+        <section id="stats" class="section bg-gradient text-white">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>+500</h3>
+                        <p>مدرسة تستخدمه</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>+100K</h3>
+                        <p>طالب مسجل</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>نسبة الرضا</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>دعم متواصل</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- NEW: Floating WhatsApp Button -->
-    <a href="https://wa.me/213660639890" target="_blank" class="float-whatsapp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+        <!-- Pricing Section -->
+        <section id="pricing" class="section pricing-section">
+            <div class="container">
+                <div class="pricing-card">
+                    <div class="popular-tag">عرض افتتاح 2026</div>
+                    <h2>النسخة الكاملة (Lifetime)</h2>
+                    <div class="price">
+                        <span class="currency">دج</span>
+                        <span class="amount">50,000</span>
+                    </div>
+                    <p class="price-desc">دفعة واحدة، استخدام مدى الحياة بلا اشتراكات شهرية أو سنوية</p>
 
-    <!-- Footer -->
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> تفعيل مدى الحياة (Lifetime License)</li>
+                        <li><i class="fa-solid fa-check"></i> تثبيت على عدد غير محدود من الحواسيب (نفس المدرسة)</li>
+                        <li><i class="fa-solid fa-check"></i> جميع التحديثات المستقبلية مجاناً</li>
+                        <li><i class="fa-solid fa-check"></i> دعم فني مخصص عبر الهاتف والواتساب</li>
+                        <li><i class="fa-solid fa-check"></i> دورة تدريبية لطاقم المدرسة على لاستخدام</li>
+                    </ul>
+
+                    <a href="#contact" class="btn-primary btn-large wobble-ver">اطلب نسختك الآن</a>
+                    <p class="money-back"><small>* ضمان استرجاع الأموال في حالة عدم الرضا خلال 30 يوم</small></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: FAQ Section -->
+        <section id="faq" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>أسئلة شائعة</h2>
+                    <p>إجابات على استفساراتكم المتكررة</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>هل يحتاج البرنامج إلى إنترنت لكي يعمل؟ <i class="fa-solid fa-chevron-down"></i></h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>لا، البرنامج يعمل محلياً على حاسوبك ولا يحتاج إلى إنترنت لتخزين البيانات. الإنترنت مطلوب
+                                فقط
+                                في حالة أردت إرسال رسائل الواتساب.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>هل يمكن تثبيت البرنامج على عدة حواسيب؟ <i class="fa-solid fa-chevron-down"></i></h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، يمكنك تثبيت البرنامج على عدة حواسيب في نفس المدرسة وربطها بشبكة محلية (Network)
+                                بمدفع
+                                واحد فقط.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>ماذا يحدث إذا تعطل حاسوبي؟ هل أفقد بياناتي؟ <i class="fa-solid fa-chevron-down"></i>
+                            </h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>لا، البرنامج يقوم بنسخ احتياطي آلي (Backup) لقاعدة البيانات يومياً. يمكنك استرجاع بياناتك
+                                بسهولة على أي حاسوب جديد.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>هل الدفع مرة واحدة أم هناك اشتراكات؟ <i class="fa-solid fa-chevron-down"></i></h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>الدفع مرة واحدة فقط (50,000 دج) وتحصل على رخصة مدى الحياة شاملة التحديثات والدعم الفني،
+                                لا
+                                توجد أي اشتراكات شهرية أو سنوية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="section-title">
+                    <h2>تواصل معنا</h2>
+                    <p>فريقنا جاهز للإجابة على استفساراتكم وتثبيت البرنامج</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>اتصل بنا</h3>
+                        <p class="contact-text">0660639890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>العنوان</h3>
+                        <p class="contact-text">الجزائر باتنة</p>
+                        <p class="contact-text">مفتوح يومياً 09:00 - 17:00</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>البريد الإلكتروني</h3>
+                        <p class="contact-text">aichi.yacine@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Floating WhatsApp Button -->
+        <a href="https://wa.me/213660639890" target="_blank" class="float-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Footer -->
+    </main>
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
