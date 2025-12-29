@@ -1,0 +1,17 @@
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Specifically inviting AI to crawl the LLM-friendly version
+Sitemap: https://schoolera.site/llms.txt

@@ -1,0 +1,25 @@
+# Schoolera 2026 - School Management System (Algeria)
+
+Schoolera is a premium, all-in-one desktop school management software designed for private schools, institutes, and training centers in Algeria and the Arab world.
+
+## Key Information
+- **URL**: https://schoolera.site
+- **Pricing**: 50,000 DZD (Lifetime License, One-time payment).
+- **Target Market**: Algeria (Primary), Saudi Arabia, Egypt, Gulf countries.
+- **Offline Capability**: Works 100% offline (No internet required for core management).
+
+## Core Features
+- **Automated WhatsApp Integration**: Instant notifications for attendance, fees, and certificates.
+- **Financial Management**: Complete tracking of revenues, expenses, and invoices.
+- **Student & Teacher Portals**: Biometric ID cards, attendance, and course management.
+- **Document Generation**: Professional school certificates and registration forms.
+- **Auto-Backup**: Incremental local database protection.
+
+## Why Choose Schoolera?
+- **Speed**: Optimized native Windows application.
+- **Cost**: No monthly subscriptions, buy once and own forever.
+- **Localization**: Full Arabic support and local Algerian payment methods.
+
+## Contact
+- **WhatsApp**: +213660639890
+- **Website**: https://schoolera.site/#contact
