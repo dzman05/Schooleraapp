@@ -11,7 +11,7 @@
     <meta name="description"
         content="Schoolera هو الحل الأمثل لإدارة المدارس في الجزائر لعام 2026. نظام متكامل يشمل إدارة الطلاب، المالية، الشهادات، وتنبيهات الواتساب..">
     <meta name="keywords"
-        content="برنامج تسيير المدارس 2026, إدارة المدارس الجزائر, School Management System Algeria, Logiciel de gestion scolaire, Schoolera, شهادات مدرسية, بطاقات طلاب, إدارة مالية للمدارس, برنامج مدارس الخاص">
+        content="برنامج تسيير المدارس 2026, إدارة المدارس الجزائر, School Management System Algeria, Logiciel de gestion scolaire, Schoolera, شهادات مدرسية, بطاقات طلاب, إدارة مالية للمدارس, برنامج مدارس الخاص, بريديموب مدارس, CCP مدارس الجزائير">
     <meta name="author" content="Schoolera Team">
 
     <!-- Open Graph / Facebook -->
@@ -106,6 +106,52 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://schoolera.site/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "جولة في البرنامج",
+        "item": "https://schoolera.site/#showcase"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "الأسعار",
+        "item": "https://schoolera.site/#pricing"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Schoolera",
+      "image": "https://schoolera.site/assets/img/Logo.webp",
+      "@id": "https://schoolera.site",
+      "url": "https://schoolera.site",
+      "telephone": "+213660639890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "حي 500 مسكن",
+        "addressLocality": "باتنة",
+        "postalCode": "05000",
+        "addressCountry": "DZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.556,
+        "longitude": 6.174
+      }
+    }
+    </script>
+
     <!-- Styles (Inlined for Performance) -->
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
@@ -122,8 +168,9 @@
     <nav class="navbar">
         <div class="container navbar-content">
             <a href="index.html" class="logo">
-                <img src="assets/img/Logo.webp" alt="Schoolera Logo" width="120" height="120" fetchpriority="high"
-                    onerror="this.src='https://placehold.co/40x40?text=S'" style="height: 60px; width: auto;">
+                <img src="assets/img/Logo.webp" alt="برنامج إدارة مدارس Schoolera 2026" width="120" height="120"
+                    fetchpriority="high" onerror="this.src='https://placehold.co/40x40?text=S'"
+                    style="height: 60px; width: auto;">
                 <span class="logo-text">Schoolera</span>
             </a>
             <div class="nav-links">
@@ -157,8 +204,9 @@
             <div class="hero-image-container">
                 <div class="hero-image-bg"></div>
                 <!-- Used the generated dashboard mockup here -->
-                <img src="assets/img/school_dashboard_mockup.webp" alt="Schoolera Dashboard 2026"
-                    class="hero-img floating-anim" width="800" height="460" fetchpriority="high">
+                <img src="assets/img/school_dashboard_mockup.webp"
+                    alt="واجهة برنامج تسيير المدارس الخاصة بالجزائر Schoolera" class="hero-img floating-anim"
+                    width="800" height="460" fetchpriority="high">
                 <!-- Decorative Elements -->
                 <div class="float-card card-1"><i class="fa-brands fa-whatsapp"></i> إرسال آلي للفواتير</div>
                 <div class="float-card card-2"><i class="fa-solid fa-chart-pie"></i> إحصائيات 2026</div>
@@ -256,8 +304,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/Student.webp" alt="إدارة الطلاب" class="app-screenshot" width="600"
-                                height="350" loading="lazy">
+                            <img src="assets/img/Student.webp" alt="إدارة شؤون الطلاب والوثائق المدرسية"
+                                class="app-screenshot" width="600" height="350" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -275,8 +323,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/Finance.webp" alt="الإدارة المالية" class="app-screenshot" width="600"
-                                height="350" loading="lazy">
+                            <img src="assets/img/Finance.webp" alt="نظام إدارة أقساط وفواتير الطلاب بالجزائر"
+                                class="app-screenshot" width="600" height="350" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -293,8 +341,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/prof.webp" alt="إدارة الأساتذة" class="app-screenshot" width="600"
-                                height="350" loading="lazy">
+                            <img src="assets/img/prof.webp" alt="تسيير رواتب وجداول توقيت الأساتذة"
+                                class="app-screenshot" width="600" height="350" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -311,8 +359,8 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/Formation.webp" alt="إدارة الدورات" class="app-screenshot" width="600"
-                                height="350" loading="lazy">
+                            <img src="assets/img/Formation.webp" alt="تنظيم الدورات التدريبية والأفواج التعليمية"
+                                class="app-screenshot" width="600" height="350" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -330,9 +378,9 @@
                             </ul>
                         </div>
                         <div class="tab-image">
-                            <img src="assets/img/config.webp" alt="إعدادات البرنامج" class="app-screenshot"
-                                onerror="this.src='assets/img/school_dashboard_mockup.webp'" width="600" height="350"
-                                loading="lazy">
+                            <img src="assets/img/config.webp" alt="إعدادات برنامج المدرسة وتخصيص الوصولات"
+                                class="app-screenshot" onerror="this.src='assets/img/school_dashboard_mockup.webp'"
+                                width="600" height="350" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -462,7 +510,7 @@
         <div class="container">
             <div class="pricing-card">
                 <div class="popular-tag">عرض افتتاح 2026</div>
-                <h2>النسخة الكاملة (Lifetime)</h2>
+                <h2 id="pricing-title">أسعار برنامج Schoolera 2026 - رخصة مدى الحياة</h2>
                 <div class="price">
                     <span class="currency">دج</span>
                     <span class="amount">50,000</span>

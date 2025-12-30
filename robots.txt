@@ -3,3 +3,6 @@ Allow: /
 
 Sitemap: https://schoolera.site/sitemap.xml
 Sitemap: https://schoolera.site/llms.txt
+# AI Indexing
+# ai.txt: Specific instructions for AI agents
+# llms.txt: Content optimized for Large Language Models
