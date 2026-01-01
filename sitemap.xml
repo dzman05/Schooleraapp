@@ -8,8 +8,25 @@
     </url>
     <url>
         <loc>https://schoolera.site/calculator.html</loc>
-        <lastmod>2025-12-29</lastmod>
+        <lastmod>2026-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://schoolera.site/blog.html</loc>
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Blog Articles -->
+    <url><loc>https://schoolera.site/blog/best-school-management-system-arab-world-2026.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/digital-transformation-education-middle-east.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/schoolera-erp-educational-institutions-review.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/whatsapp-automation-schools-parents-engagement.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/organizing-exams-student-records-digital-solutions.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/future-of-training-centers-management-smart-apps.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/accounting-software-for-private-schools-saudi-uae-egypt.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/cloud-vs-desktop-school-management-pros-cons.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/schoolera-success-stories-arab-schools.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/education-vision-2030-technology-integration.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
 </urlset>

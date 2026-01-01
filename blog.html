@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة سكوليرا (Schoolera Blog) - مقالات في إدارة التعليم والرقمنة 2026</title>
+    <meta name="description"
+        content="اكتشف أحدث المقالات والنصائح حول إدارة المدارس الخاصة والمراكز التعليمية في الوطن العربي. حلول تقنية، رقمنة التعليم، وقصص نجاح مع سكوليرا.">
+    <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
+    <style>
+        @font-face {
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
+        }
+
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #4338ca;
+            --secondary: #ec4899;
+            --accent: #8b5cf6;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #475569;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary)
+        }
+
+        .logo img {
+            height: 60px
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center
+        }
+
+        .nav-links a:not(.btn-primary) {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95rem
+        }
+
+        .nav-links a:not(.btn-primary):hover {
+            color: var(--primary)
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4)
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6)
+        }
+
+        /* Blog Header */
+        .blog-header {
+            padding: 160px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+        }
+
+        .blog-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        /* Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            padding: 60px 0;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-color: var(--light);
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .blog-content h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: var(--dark);
+        }
+
+        .blog-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+        }
+    </style>
+    <!-- Font Awesome -->
+    <link rel="preload" href="assets/vendor/font-awesome/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    </noscript>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Logo.webp" alt="برنامج إدارة مدارس Schoolera 2026"
+                    style="height: 60px; width: auto;">
+                <span class="logo-text">Schoolera | سكوليرا</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">المميزات</a>
+                <a href="index.html#showcase">جولة في البرنامج</a>
+                <a href="index.html#stats">إحصائيات</a>
+                <a href="index.html#pricing">الأسعار</a>
+                <a href="blog.html" style="color: var(--primary)">المدونة</a>
+                <a href="index.html#faq">أسئلة شائعة</a>
+                <a href="index.html#contact" class="btn-primary">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="blog-header">
+        <div class="container">
+            <h1>مدونة <span style="color: var(--primary)">سكوليرا</span></h1>
+            <p>مقالات حصرية حول إدارة المراكز التعليمية والتحول الرقمي في العالم العربي</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أفضل نظام إدارة مدارس في العالم العربي 2026</h3>
+                    <p>لماذا يتصدر برنامج سكوليرا (Schoolera) قائمة البرامج المفضلة للمدارس الخاصة في السعودية، مصر،
+                        والخليج؟</p>
+                    <a href="blog/best-school-management-system-arab-world-2026.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>التحول الرقمي في التعليم: رؤية 2030 والشرق الأوسط</h3>
+                    <p>كيف تساهم التكنولوجيا في تحسين جودة التعليم وتسهيل المهام الإدارية للمديرين والمعلمين.</p>
+                    <a href="blog/digital-transformation-education-middle-east.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>مراجعة شاملة لبرنامج Schoolera ERP للمؤسسات التعليمية</h3>
+                    <p>تعرف على الأدوات المالية والإدارية التي جعلت سكوليرا الحل المتكامل لإدارة المدارس.</p>
+                    <a href="blog/schoolera-erp-educational-institutions-review.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أتمتة تنبيهات الواتساب: ثورة في التواصل المدرسي</h3>
+                    <p>كيف غيرت رسائل الواتساب الآلية وجه العلاقة بين المدرسة وأولياء الأمور في سكوليرا.</p>
+                    <a href="blog/whatsapp-automation-schools-parents-engagement.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>تنظيم الامتحانات وسجلات الطلاب رقمياً</h3>
+                    <p>وداعاً للأوراق! اكتشف كيف يدير سكوليرا الامتحانات والنتائج والشهادات بضغطة زر.</p>
+                    <a href="blog/organizing-exams-student-records-digital-solutions.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>مستقبل إدارة مراكز التكوين واللغات</h3>
+                    <p>استخدام التطبيقات الذكية في تنظيم الدورات التدريبية والأفواج لضمان أقصى كفاءة.</p>
+                    <a href="blog/future-of-training-centers-management-smart-apps.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أفضل برنامج محاسبي للمدارس الخاصة (السعودية، الإمارات، مصر)</h3>
+                    <p>لماذا تحتاج مدرستك إلى نظام مالي مدمج بدلاً من ملفات Excel التقليدية؟</p>
+                    <a href="blog/accounting-software-for-private-schools-saudi-uae-egypt.html" class="read-more">اقرأ
+                        المزيد ←</a>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>نظام سطح المكتب vs الأنظمة السحابية: ماذا تختار لمدرستك؟</h3>
+                    <p>مقارنة شاملة بين البرامج المحلية (مثل سكوليرا) والبرامج السحابية من حيث الأمان والتكلفة.</p>
+                    <a href="blog/cloud-vs-desktop-school-management-pros-cons.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>قصص نجاح من المدارس العربية مع سكوليرا</h3>
+                    <p>كيف ساعد Schoolera مئات المؤسسات التعليمية في تنظيم أعمالها وزيادة أرباحها.</p>
+                    <a href="blog/schoolera-success-stories-arab-schools.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>الرؤية التعليمية 2030 وتكامل التكنولوجيا</h3>
+                    <p>كيف يتماشى سكوليرا مع الرؤى الوطنية للدول العربية في تطوير المنظومة التعليمية الرقمية.</p>
+                    <a href="blog/education-vision-2030-technology-integration.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/img/Logo.webp" alt="Logo" style="height: 30px; vertical-align: middle; width: auto;"
+                    loading="lazy"> Schoolera (سكوليرا)
+            </div>
+            <div class="footer-links" style="margin: 1rem 0;">
+                <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">الرئيسية</a>
+                <a href="blog.html" style="color: white; margin: 0 10px; text-decoration: none;">المدونة</a>
+                <a href="index.html#pricing" style="color: white; margin: 0 10px; text-decoration: none;">الأسعار</a>
+            </div>
+            <p>&copy; 2026 Schoolera. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="https://web.facebook.com/Schooleradz" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/schoolera" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/schoolera" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
