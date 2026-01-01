@@ -61,7 +61,7 @@
         "bestRating": "5",
         "worstRating": "1"
       },
-      "featureList": "تنبيهات واتساب, إدارة مالية, طباعة شهادات, بطاقات بيومترية, عمل بدون إنترنت, نسخ احتياطي آلي",
+      "featureList": "تنبيهات واتساب, إدارة مالية, طباعة شهادات, الـ Barcode والـ QR, عمل بدون إنترنت, نسخ احتياطي آلي وذكي",
       "screenshot": "https://schoolera.site/assets/img/school_dashboard_mockup.webp",
       "author": {
         "@type": "Organization",
@@ -1092,6 +1092,83 @@
                 order: -1
             }
         }
+
+        .comparison-section {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .comparison-side {
+            background: #f8fafc;
+            padding: 3rem;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .comparison-side.old {
+            border-right: 5px solid #ef4444;
+        }
+
+        .comparison-side.new {
+            background: #f0fdf4;
+            border-right: 5px solid #22c55e;
+            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.1);
+        }
+
+        .comparison-side h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .comparison-side.old h3 {
+            color: #b91c1c;
+        }
+
+        .comparison-side.new h3 {
+            color: #15803d;
+        }
+
+        .comparison-item {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .comparison-item i {
+            margin-top: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .comparison-side.old .comparison-item i {
+            color: #ef4444;
+        }
+
+        .comparison-side.new .comparison-item i {
+            color: #22c55e;
+        }
+
+        .comparison-item p {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 992px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
     </style>
 
     <!-- Font Awesome (Deferred for Performance) -->
@@ -1183,9 +1260,9 @@
                 <!-- Feature 3 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
-                    <h3>شهادات وبطاقات بيومترية</h3>
-                    <p>4 قوالب شهادات فاخرة جاهزة للتخصيص. طباعة بطاقات طلاب احترافية تحتوي على رمز QR Code لتسجيل
-                        الحضور السريع ومتابعة الطلاب.</p>
+                    <h3>بطاقات طلاب وشهادات احترافية</h3>
+                    <p>4 قوالب شهادات فاخرة جاهزة للتخصيص. طباعة بطاقات طلاب بلمسة عصرية تحتوي على رمز QR Code لتسجيل
+                        الحضور السريع ومتابعة الطلاب مع دعم ضغط الصور لتوفير المساحة.</p>
                 </div>
 
                 <!-- Feature 4 -->
@@ -1198,18 +1275,72 @@
 
                 <!-- Feature 5 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box"><i class="fa-solid fa-database"></i></div>
-                    <h3>أمان ونسخ احتياطي آلي</h3>
-                    <p>لا تقلق على بياناتك. النظام يقوم بنسخ احتياطي يومي تلقائي لقاعدة البيانات. تشفير تام لكل
-                        المعلومات الحساسة وسجل دخول للموظفين.</p>
+                    <div class="icon-box"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>نسخ احتياطي ذكي وحماية مدمجة</h3>
+                    <p>لا تقلق على بياناتك. النظام يقوم بنسخ احتياطي آلي ومضغوط يومياً وعند الخروج. مع تقنية "بدون
+                        انهيار" (Anti-Crash) لضمان استقرار البرنامج 24/7.</p>
                 </div>
 
                 <!-- Feature 6 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
-                    <h3>إدارة شؤون الطلاب والأساتذة</h3>
-                    <p>ملفات شاملة لكل طالب وأستاذ. تتبع السيرة الذاتية، مدفوعات الرواتب، الغيابات، والملاحظات الإدارية
-                        في واجهة واحدة بسيطة.</p>
+                    <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>أداء فائق للبيانات الضخمة</h3>
+                    <p>سواء كان لديك 10 طلاب أو 10,000 طالب، واجهاتنا تستخدم تقنيات الترقيم (Pagination) لضمان سرعة
+                        فائقة في البحث والتنقل دون أي ثقل في البرنامج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="section comparison-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>لماذا تترك الطريقة البدائية اليوم؟</h2>
+                <p>الفرق بين تسيير مدرستك يدوياً وبين الاحترافية مع Schoolera</p>
+            </div>
+
+            <div class="comparison-grid">
+                <!-- Old Way -->
+                <div class="comparison-side old" data-aos="fade-left">
+                    <h3><i class="fa-solid fa-rectangle-xmark"></i> الطريقة البدائية (الورقية)</h3>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-face-frown"></i>
+                        <p>ضياع البيانات وتلف السجلات الورقية مع الوقت.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-face-frown"></i>
+                        <p>عشوائية في تتبع الديون والمدفوعات المتأخرة.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-face-frown"></i>
+                        <p>البحث عن ملف طالب يستغرق دقائق وسط أكوام الملفات.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-face-frown"></i>
+                        <p>صعوبة التواصل مع الأولياء وتكلفة الرسائل العالية.</p>
+                    </div>
+                </div>
+
+                <!-- New Way (Schoolera) -->
+                <div class="comparison-side new" data-aos="fade-right">
+                    <h3><i class="fa-solid fa-circle-check"></i> مع Schoolera 2026</h3>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>نسخ احتياطي آلي وتشفير يحمي بياناتك للأبد.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <p>تنبيهات آلية للديون وحساب دقيق للأرباح بضغطة زر.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                        <p>عثر على أي معلومة في أقل من ثانية بفضل الترقيم الذكي.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>تواصل لحظي ووصولات دفع آلية عبر الواتساب مجاناً.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1354,8 +1485,15 @@
                 <div class="module-item">
                     <i class="fa-solid fa-barcode"></i>
                     <div>
-                        <h4>دعم الباركود (Barcode)</h4>
-                        <p>استخدم قارئ الباركود لتسجيل الحضور وبيع الكتب والمذكرات.</p>
+                        <h4>دعم الـ Barcode والـ QR</h4>
+                        <p>استخدم قارئ الباركود/QR لتسجيل حضور الطلاب بسرعة البرق وتلقائياً في الأفواج.</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div>
+                        <h4>تقنية Anti-Crash الذكية</h4>
+                        <p>نظام حماية داخلي يمنع البرنامج من الإغلاق المفاجئ حتى في حالة حدوث أخطاء غير متوقعة.</p>
                     </div>
                 </div>
                 <div class="module-item">
@@ -1366,10 +1504,10 @@
                     </div>
                 </div>
                 <div class="module-item">
-                    <i class="fa-solid fa-user-shield"></i>
+                    <i class="fa-solid fa-microchip"></i>
                     <div>
-                        <h4>صلاحيات المستخدمين</h4>
-                        <p>حدد صلاحيات مخصصة للمدير، السكرتيرة، والمحاسب لحماية البيانات.</p>
+                        <h4>تفعيل آمن ونهائي</h4>
+                        <p>نظام حماية متطور يربط الرخصة بعتاد الجهاز (HWID) لضمان أمان حقوقك ومنع النسخ غير المشروع.</p>
                     </div>
                 </div>
                 <div class="module-item">
@@ -1377,6 +1515,20 @@
                     <div>
                         <h4>دعم فني وتحديثات</h4>
                         <p>تحديثات دورية لإضافة خصائص جديدة (نسخة 2026 محدثة).</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <div>
+                        <h4>البحث السريع والترقيم</h4>
+                        <p>تقنية Pagination لضمان سرعة البحث والتنقل حتى مع آلاف الطلاب.</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <i class="fa-solid fa-images"></i>
+                    <div>
+                        <h4>الأرشفة الذكية للصور</h4>
+                        <p>نظام ضغط الصور آلياً للحفاظ على خفة البرنامج ومساحة التخزين.</p>
                     </div>
                 </div>
             </div>
@@ -1456,38 +1608,36 @@
                     <span class="currency">دج</span>
                     <span class="amount">0</span>
                 </div>
-                <p class="price-desc">جرب كافة المميزات مجاناً لمدة أسبوع</p>
+                <p class="price-desc">نسخة تجريبية كاملة الميزات</p>
                 <ul class="features-list">
                     <li><i class="fa-solid fa-check"></i> وصول كامل لكافة الأقسام</li>
                     <li><i class="fa-solid fa-check"></i> صلاحية لمدة 7 أيام</li>
                     <li><i class="fa-solid fa-check"></i> حفظ تلقائي للبيانات</li>
-                    <li><i class="fa-solid fa-xmark" style="background:#fee2e2;color:#ef4444"></i> دعم فني هاتف/واتساب
-                    </li>
+                    <li><i class="fa-solid fa-xmark" style="background:#fee2e2;color:#ef4444"></i> دعم فني مخصص</li>
                 </ul>
                 <a href="https://drive.google.com/uc?export=download&id=1Br5mFmXrXrD20th0gSpjZhHsdtBz6Krh"
-                    class="btn-secondary">حمل مجاناً</a>
+                    class="btn-secondary">تحميل مجاني</a>
             </div>
 
             <!-- Basic Plan (No Support) -->
             <div class="pricing-card">
-                <h3>باقة الاستخدام الذاتي</h3>
+                <h3>باقة الاستخدام الفردي</h3>
                 <div class="price">
                     <span class="currency">دج</span>
                     <span class="amount">50,000</span>
                 </div>
-                <p class="price-desc">رخصة مدى الحياة للمدارس الصغيرة</p>
+                <p class="price-desc">تفعيل نهائي لجهاز كمبيوتر واحد</p>
                 <ul class="features-list">
-                    <li><i class="fa-solid fa-check"></i> تفعيل مدى الحياة لنفس الجهاز</li>
+                    <li><i class="fa-solid fa-check"></i> تفعيل مدى الحياة (HWID)</li>
                     <li><i class="fa-solid fa-check"></i> التحديثات الأساسية مجاناً</li>
                     <li><i class="fa-solid fa-check"></i> بدون مصاريف سنوية</li>
-                    <li><i class="fa-solid fa-xmark" style="background:#fee2e2;color:#ef4444"></i> دعم فني مخصص (VIP)
-                    </li>
+                    <li><i class="fa-solid fa-xmark" style="background:#fee2e2;color:#ef4444"></i> دعم فني VIP</li>
                 </ul>
-                <a href="#contact" class="btn-primary">طلب محلي (CCP/BaridiMob)</a>
+                <a href="#contact" class="btn-primary">طلب محلي (CCP)</a>
                 <div style="margin-top: 10px;">
                     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aichi.rimi@gmail.com&currency_code=USD&amount=299&item_name=Schoolera%20Basic%20License"
                         target="_blank" class="btn-secondary" style="width: 100%; display: block; text-align: center;">
-                        <i class="fa-brands fa-paypal"></i> دفع $299 (PayPal)
+                        <i class="fa-brands fa-paypal"></i> دفع $299
                     </a>
                 </div>
             </div>
