@@ -123,15 +123,89 @@
             text-align: center;
             margin-top: 4rem;
         }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 992px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.4s ease;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                right: 0;
+                display: flex !important;
+            }
+
+            .nav-links a {
+                font-size: 1.2rem;
+                width: 80%;
+                text-align: center;
+                color: var(--text) !important;
+            }
+
+            .nav-links .btn-primary {
+                width: 80%;
+                margin: 0;
+                color: white !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <a href="../index.html" class="logo"><img src="../assets/img/Logo.webp" alt="Schoolera"
-                    style="height: 45px;"><span>سكوليرا | Schoolera</span></a>
-            <a href="../blog.html" style="text-decoration: none; color: #475569; font-weight: 600;">← العودة للمدونة</a>
+        <div class="container navbar-content"
+            style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/Logo.webp" alt="برنامج إدارة مدارس Schoolera 2026"
+                    style="height: 60px; width: auto;">
+                <span class="logo-text">Schoolera | سكوليرا</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">المميزات</a>
+                <a href="../index.html#showcase">جولة في البرنامج</a>
+                <a href="../index.html#stats">إحصائيات</a>
+                <a href="../index.html#pricing">الأسعار</a>
+                <a href="../blog.html" style="color: var(--primary)">المدونة</a>
+                <a href="../index.html#faq">أسئلة شائعة</a>
+                <a href="../index.html#contact" class="btn-primary">اتصل بنا</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -197,7 +271,8 @@
         <p>لأننا نعلم حساسية بيانات الطلاب والدرجات، اعتمدنا في سكوليرا على تشفير محلي قوي. بما أن النظام يعمل
             <strong>Offline</strong>، فلا خوف من تسريب البيانات عبر الإنترنت. أنت المتحكم الوحيد في بياناتك، ويمكنك
             تحديد صلاحيات الدخول للموظفين؛ بحيث يرى كل موظف ما يخصه فقط (المحاسب يرى المالية، والمعلم يرى العلامات،
-            والمدير يرى كل شيء).</p>
+            والمدير يرى كل شيء).
+        </p>
 
         <h2>الخلاصة: هل حان وقت التغيير؟</h2>
         <p>الاستمرار في استخدام النظام الورقي في عام 2026 هو قرار قد يكلف مدرستك الكثير من الوقت والسمعة والمال. التحول

@@ -124,17 +124,89 @@
             text-align: center;
             margin-top: 5rem;
         }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 992px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.4s ease;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                right: 0;
+                display: flex !important;
+            }
+
+            .nav-links a {
+                font-size: 1.2rem;
+                width: 80%;
+                text-align: center;
+                color: var(--text) !important;
+            }
+
+            .nav-links .btn-primary {
+                width: 80%;
+                margin: 0;
+                color: white !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="container"
+        <div class="container navbar-content"
             style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 2rem;">
-            <a href="../index.html" class="logo"><img src="../assets/img/Logo.webp" alt="Schoolera"
-                    style="height: 40px;"><span>سكوليرا | Schoolera</span></a>
-            <a href="../blog.html" style="text-decoration: none; color: var(--primary); font-weight: 700;">← العودة
-                للمدونة</a>
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/Logo.webp" alt="برنامج إدارة مدارس Schoolera 2026"
+                    style="height: 60px; width: auto;">
+                <span class="logo-text">Schoolera | سكوليرا</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">المميزات</a>
+                <a href="../index.html#showcase">جولة في البرنامج</a>
+                <a href="../index.html#stats">إحصائيات</a>
+                <a href="../index.html#pricing">الأسعار</a>
+                <a href="../blog.html" style="color: var(--primary)">المدونة</a>
+                <a href="../index.html#faq">أسئلة شائعة</a>
+                <a href="../index.html#contact" class="btn-primary">اتصل بنا</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -145,7 +217,8 @@
             مرنة، دقيقة، وقادرة على التعامل مع "الأفواج المتعددة" والمواعيد المتغيرة. في عام 2026، لم يعد التسيير اليدوي
             أو استخدام البرامج المكتبية البسيطة كافياً لمواكبة هذه الديناميكية. المستقبل ينتمي للمراكز التي تتبنى
             <strong>تطبيقات ذكية متكاملة</strong> قادرة على رقمنة الرحلة التدريبية بالكامل. برنامج <strong>سكوليرا
-                (Schoolera)</strong> يتصدر هذا المشهد كحل مثالي لهذه المؤسسات.</p>
+                (Schoolera)</strong> يتصدر هذا المشهد كحل مثالي لهذه المؤسسات.
+        </p>
 
         <img src="../assets/img/school_dashboard_mockup.webp"
             alt="إدارة مراكز التسيير والتكوين عبر تطبيق سكوليرا الذكي">
@@ -209,7 +282,8 @@
         <h2>الخلاصة: هل أنت جاهز للنمو؟</h2>
         <p>إذا كنت طموحاً وترغب في تحويل مركزك من مجرد "مكان للدراسة" إلى مؤسسة تعليمية احترافية يشار إليها بالبنان، فإن
             <strong>سكوليرا</strong> هو شريكك الاستراتيجي. الرقمنة هي اللغة الوحيدة التي يفهمها جيل 2026، فكن أول من
-            يتحدثها بطلاقة واحترافية.</p>
+            يتحدثها بطلاقة واحترافية.
+        </p>
 
         <div class="cta-box">
             <h2>حوّل مركزك التدريبي إلى مؤسسة ذكية اليوم!</h2>

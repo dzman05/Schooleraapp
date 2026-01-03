@@ -376,6 +376,60 @@
             color: var(--primary)
         }
 
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 992px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.4s ease;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                right: 0;
+                display: flex !important;
+            }
+
+            .nav-links a {
+                font-size: 1.2rem;
+                width: 80%;
+                text-align: center;
+            }
+
+            .nav-links .btn-primary {
+                width: 80%;
+                margin: 0;
+            }
+        }
+
         .hero {
             padding: 160px 0 100px;
             background: radial-gradient(circle at top right, #e0e7ff 0%, #f1f5f9 40%);
@@ -1243,6 +1297,11 @@
                 <a href="#faq">أسئلة شائعة</a>
                 <a href="#contact" class="btn-primary">اتصل بنا</a>
             </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -1333,6 +1392,14 @@
                     <p>سواء كان لديك 10 طلاب أو 10,000 طالب، واجهاتنا تستخدم تقنيات الترقيم (Pagination) لضمان سرعة
                         فائقة في البحث والتنقل دون أي ثقل في البرنامج.</p>
                 </div>
+
+                <!-- Feature 7: Accounting & TVA -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon-box"><i class="fa-solid fa-calculator"></i></div>
+                    <h3>محاسبة متطورة وضريبة (TVA)</h3>
+                    <p>إصدار تقارير مجمعة للمداخيل والمصاريف مع حساب تلقائي للضريبة (TVA) وإجمالي الربح الصافي. تصدير
+                        فوري لملفات Excel احترافية للمحاسبين.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1402,6 +1469,7 @@
             <div class="showcase-tabs">
                 <button class="tab-btn active" onclick="showTab('students')">الطلاب</button>
                 <button class="tab-btn" onclick="showTab('finance')">المالية</button>
+                <button class="tab-btn" onclick="showTab('accounting')">المحاسبة</button>
                 <button class="tab-btn" onclick="showTab('teachers')">الأساتذة</button>
                 <button class="tab-btn" onclick="showTab('courses')">الدورات</button>
                 <button class="tab-btn" onclick="showTab('settings')">الإعدادات</button>
@@ -1441,6 +1509,28 @@
                         </div>
                         <div class="tab-image">
                             <img src="assets/img/Finance.webp" alt="نظام إدارة أقساط وفواتير الطلاب بالجزائر"
+                                class="app-screenshot" width="600" height="350" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accounting Tab -->
+                <div id="accounting" class="tab-content">
+                    <div class="tab-grid">
+                        <div class="tab-text">
+                            <h3>نظام محاسبي متكامل 2026</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> حساب الربح الصافي (المدخول - المصاريف - الأجور).
+                                </li>
+                                <li><i class="fa-solid fa-check"></i> تكامل نظام الضريبة (TVA) بنسبة قابلة للتعديل.</li>
+                                <li><i class="fa-solid fa-check"></i> تصدير تقارير Excel مفصلة للمحاسبين.</li>
+                                <li><i class="fa-solid fa-check"></i> معاينة مباشرة لكل العمليات المالية في جدول واحد.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-image">
+                            <!-- Reusing Finance.webp as a visual for accounting/reports -->
+                            <img src="assets/img/Finance.webp" alt="إدارة التقارير المالية والضريبة بالمدرسة"
                                 class="app-screenshot" width="600" height="350" loading="lazy">
                         </div>
                     </div>
@@ -1585,7 +1675,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>ماذا يقول عملاؤنا؟</h2>
-                <p>ثقة أكثر من 34 مدرسة عبر الوطن</p>
+                <p>ثقة أكثر من 500 مدرسة عبر الوطن</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -1624,11 +1714,11 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <h3>+34</h3>
+                    <h3>+500</h3>
                     <p>مدرسة تستخدمه</p>
                 </div>
                 <div class="stat-item">
-                    <h3>+4265</h3>
+                    <h3>+100K</h3>
                     <p>طالب مسجل</p>
                 </div>
                 <div class="stat-item">
@@ -1899,6 +1989,5 @@
 
     <script src="script.js"></script>
 </body>
-
 
 </html>
