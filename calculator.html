@@ -530,27 +530,28 @@
                                     style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 1rem;">
                             </div>
                             <div style="margin-bottom: 1.5rem;">
-                                <label for="calc-fee"
-                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600;">معدل القسط الشهري
-                                    (دج)</label>
-                                <input type="number" id="calc-fee" class="form-control" placeholder="مثلاً: 3000"
+                                <label for="calc-competitor"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600;">اشتراك البرنامج
+                                    السحابي (شهرياً)</label>
+                                <input type="number" id="calc-competitor" class="form-control"
+                                    placeholder="مثلاً: 10000 دج"
                                     style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 1rem;">
+                                <small style="color: var(--gray);">مثل Skolera أو غيرها</small>
                             </div>
-                            <button onclick="calculateRevenue()" class="btn-primary"
-                                style="width: 100%; border: none; margin-bottom: 1.5rem; font-size: 1.1rem;">احسب أرباحي
-                                الآن</button>
+                            <button onclick="calculateSavings()" class="btn-primary"
+                                style="width: 100%; border: none; margin-bottom: 1.5rem; font-size: 1.1rem; background: #10b981;">احسب
+                                كم ستوفر مع Schoolera</button>
 
                             <div id="calc-result"
                                 style="display: none; background: #f8fafc; padding: 1.5rem; border-radius: 15px; text-align: center; border: 1px solid #e2e8f0; animation: fadeIn 0.5s;">
-                                <h4 style="margin-bottom: 10px; color: #64748b;">الدخل الشهري المتوقع</h4>
-                                <div
-                                    style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">
-                                    <span id="monthly-revenue">0</span> <span style="font-size: 1rem;">دج</span>
+                                <h4 style="margin-bottom: 10px; color: #64748b;">توفيرك خلال 5 سنوات</h4>
+                                <div style="font-size: 2.5rem; font-weight: 800; color: #10b981; margin-bottom: 5px;">
+                                    <span id="total-savings">0</span> <span style="font-size: 1rem;">دج</span>
                                 </div>
                                 <p
-                                    style="font-size: 0.9rem; color: #ef4444; font-weight: 600; background: #fef2f2; padding: 5px; border-radius: 5px; display: inline-block;">
-                                    <i class="fa-solid fa-triangle-exclamation"></i> بدون نظام دقيق، قد تخسر 15% من هذا
-                                    المبلغ!
+                                    style="font-size: 0.9rem; color: var(--dark); font-weight: 600; background: #dcfce7; padding: 10px; border-radius: 5px; margin-top: 10px;">
+                                    <i class="fa-solid fa-piggy-bank"></i> مع دفع مرة واحدة (50,000 دج)، أنت الرابح
+                                    الأكبر!
                                 </p>
                             </div>
                         </div>
@@ -585,12 +586,15 @@
     </footer>
 
     <script>
-        function calculateRevenue() {
-            const students = document.getElementById('calc-students').value;
-            const fee = document.getElementById('calc-fee').value;
-            if (students && fee) {
-                const monthly = students * fee;
-                document.getElementById('monthly-revenue').innerText = new Intl.NumberFormat().format(monthly);
+        function calculateSavings() {
+            const competitorMonthly = document.getElementById('calc-competitor').value;
+            const schooleraOneTime = 50000; // Fixed price assumption
+
+            if (competitorMonthly) {
+                const competitor5Years = competitorMonthly * 12 * 5;
+                const savings = competitor5Years - schooleraOneTime;
+
+                document.getElementById('total-savings').innerText = new Intl.NumberFormat().format(savings);
                 document.getElementById('calc-result').style.display = 'block';
             }
         }

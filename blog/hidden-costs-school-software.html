@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقارنة التكاليف الخفية في برامج إدارة المدارس: الاشتراك vs التمليك</title>
+    <meta name="description"
+        content="اكتشف الحقيقة حول تكاليف الأنظمة السحابية الشهرية مقارنة بنظام التمليك (Lifetime License). كيف توفر ملايين السنتيمات سنوياً باختيار نظام إدارة مدارس ذكي.">
+    <meta name="keywords"
+        content="تكلفة برنامج ادارة مدارس, سعر نظام مدرسي, اشتراكات البرامج السحابية, school management system pricing, توفير مصاريف المدرسة, رخصة مدى الحياة">
+    <link rel="icon" type="image/webp" href="../assets/img/Logo.webp">
+    <style>
+        @font-face {
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("../assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("../assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
+        }
+
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #4338ca;
+            --secondary: #ec4899;
+            --accent: #8b5cf6;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #475569;
+            --success: #10b981;
+            --danger: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.6;
+            padding-top: 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .article-container {
+            max-width: 900px;
+            background: white;
+            margin: 2rem auto;
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary);
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a:not(.btn-primary) {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:not(.btn-primary):hover {
+            color: var(--primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 992px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.4s ease;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                right: 0;
+                display: flex !important;
+            }
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6);
+        }
+
+        article h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        article h2 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            color: var(--dark);
+            border-right: 6px solid var(--primary);
+            padding-right: 15px;
+        }
+
+        article p {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            background: white;
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            margin-top: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Table Styles */
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .cost-table th {
+            background: var(--dark);
+            color: white;
+            padding: 1.2rem;
+        }
+
+        .cost-table td {
+            padding: 1.2rem;
+            border-bottom: 1px solid #eef2ff;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .cost-table tr:last-child td {
+            border-bottom: none;
+            font-weight: 700;
+            background: #f0fdf4;
+            color: var(--success);
+        }
+
+        /* FAQ Styles */
+        .faq-section {
+            margin-top: 3rem;
+            background: #f9fafb;
+            padding: 2rem;
+            border-radius: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1rem;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        .faq-answer {
+            margin-top: 0.5rem;
+            color: var(--gray);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "ما الفرق بين الاشتراك الشهري والرخصة مدى الحياة؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الاشتراك الشهري يعني أنك تدفع مبلغاً مستمراً (كالإيجار) لاستخدام البرنامج، وإذا توقفت تفقد البيانات. الرخصة مدى الحياة تعني أنك تشتري البرنامج مرة واحدة وتملكه للأبد دون أي دفعات إضافية."
+        }
+      }, {
+        "@type": "Question",
+        "name": "هل توجد رسوم خفية في Schoolera؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لا، السعر المعلن هو سعر نهائي يدفع مرة واحدة. يشمل البرنامج والتثبيت والتدريب الأولي، ولا توجد رسوم تجديد سنوية."
+        }
+      }, {
+        "@type": "Question",
+        "name": "لماذا الأنظمة الأخرى أغلى بكثير؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الأنظمة السحابية تتحمل تكاليف سيرفرات ضخمة فرق تسويق دولية، ويقومون بتحميل هذه التكاليف على العميل النهائي عبر الاشتراكات المتكررة."
+        }
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/Logo.webp" alt="برنامج إدارة مدارس Schoolera"
+                    style="height: 60px; width: auto;">
+                <span class="logo-text">Schoolera | سكوليرا</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">المميزات</a>
+                <a href="../index.html#showcase">جولة في البرنامج</a>
+                <a href="../index.html#stats">إحصائيات</a>
+                <a href="../index.html#pricing">الأسعار</a>
+                <a href="../blog.html" style="color: var(--primary)">المدونة</a>
+                <a href="../index.html#faq">أسئلة شائعة</a>
+                <a href="../index.html#contact" class="btn-primary">اتصل بنا</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <article class="container article-container">
+        <h1>الاشتراك vs التمليك: كيف توفر مدرستك الملايين سنوياً؟</h1>
+        <p>في عالم إدارة الأعمال، هناك قاعدة ذهبية: <strong>"لا تستأجر ما يمكنك شراؤه"</strong>. للأسف، تقع العديد من
+            المدارس الخاصة في فخ "الأنظمة السحابية" التي تبدو تكلفتها الشهرية بسيطة، لكنها تتحول إلى ثقب أسود يلتهم
+            الميزانية على المدى الطويل.</p>
+
+        <h2>الحقيقة وراء نموذج "SaaS" (الدفع كخدمة)</h2>
+        <p>الشركات العالمية التي تقدم أنظمة سحابية تعتمد على نموذج الاشتراكات. قد يخبرونك أن السعر هو 100 دولار شهرياً
+            فقط. ولكن، لنتحقق من الأرقام الحقيقية:</p>
+
+        <table class="cost-table">
+            <thead>
+                <tr>
+                    <th>النظام</th>
+                    <th>السنة الأولى</th>
+                    <th>السنة الخامسة</th>
+                    <th>الحالة النهائية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>نظام سحابي (Cloud)</td>
+                    <td>150,000 دج</td>
+                    <td>750,000 دج</td>
+                    <td>لم تمتلك شيئاً (مجرد مستأجر)</td>
+                </tr>
+                <tr>
+                    <td>نظام Schoolera (تمليك)</td>
+                    <td>50,000 دج</td>
+                    <td>50,000 دج (0 دج إضافية)</td>
+                    <td>مالك للبرنامج 100%</td>
+                </tr>
+                <tr>
+                    <td style="color:red">الفرق (الخسارة)</td>
+                    <td style="color:red">-100,000 دج</td>
+                    <td style="color:red">-700,000 دج</td>
+                    <td>أموال ضائعة!</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>لماذا Schoolera هو الاستثمار الأذكى؟</h2>
+        <p>عندما تختار <strong>Schoolera</strong>، فأنت تقوم بعملية "شراء أصل" (Asset Acquisition). المدرسة تمتلك
+            البرنامج، قاعدة البيانات، وكل السجلات. لا يوجد مدير مبيعات يتصل بك نهاية العام لتهديدك بقطع الخدمة إذا لم
+            تجدد الاشتراك.</p>
+
+        <h2>أين تذهب الأموال التي توفرها؟</h2>
+        <p>بدلاً من دفع آلاف الدولارات لشركات برمجيات أجنبية، استثمر تلك الأموال في:</p>
+        <ul>
+            <li>✔ تحسين رواتب المعلمين.</li>
+            <li>✔ تجديد تجهيزات الأقسام.</li>
+            <li>✔ حملات تسويقية لجلب طلاب جدد.</li>
+        </ul>
+
+        <div class="faq-section">
+            <h2 style="border: none; margin-top: 0;">أسئلة شائعة (FAQ)</h2>
+            <div class="faq-item" onclick="this.classList.toggle('active')">
+                <div class="faq-question">ما الفرق بين الاشتراك الشهري والرخصة مدى الحياة؟</div>
+                <div class="faq-answer">الاشتراك الشهري يعني أنك تدفع مبلغاً مستمراً (كالإيجار) لاستخدام البرنامج، وإذا
+                    توقفت تفقد البيانات. الرخصة مدى الحياة تعني أنك تشتري البرنامج مرة واحدة وتملكه للأبد دون أي دفعات
+                    إضافية.</div>
+            </div>
+            <div class="faq-item" onclick="this.classList.toggle('active')">
+                <div class="faq-question">هل توجد رسوم خفية في Schoolera؟</div>
+                <div class="faq-answer">لا، السعر المعلن هو سعر نهائي يدفع مرة واحدة. يشمل البرنامج والتثبيت والتدريب
+                    الأولي، ولا توجد رسوم تجديد سنوية.</div>
+            </div>
+            <div class="faq-item" onclick="this.classList.toggle('active')">
+                <div class="faq-question">لماذا الأنظمة الأخرى أغلى بكثير؟</div>
+                <div class="faq-answer">الأنظمة السحابية تتحمل تكاليف سيرفرات ضخمة وفرق تسويق دولية، ويقومون بتحميل هذه
+                    التكاليف على العميل النهائي عبر الاشتراكات المتكررة.</div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h2>ابدأ التوفير اليوم</h2>
+            <p>لا تدفع إيجاراً لبرنامجك. امتلكه الآن.</p>
+            <a href="../calculator.html" class="btn">احسب توفيرك بالتفصيل</a>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="../assets/img/Logo.webp" alt="Logo" style="height: 30px; vertical-align: middle; width: auto;"
+                    loading="lazy"> Schoolera (سكوليرا)
+            </div>
+            <div class="footer-links" style="margin: 1rem 0;">
+                <a href="../index.html" style="color: white; margin: 0 10px; text-decoration: none;">الرئيسية</a>
+                <a href="../blog.html" style="color: white; margin: 0 10px; text-decoration: none;">المدونة</a>
+                <a href="../index.html#pricing" style="color: white; margin: 0 10px; text-decoration: none;">الأسعار</a>
+            </div>
+            <p>&copy; 2026 Schoolera. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="https://web.facebook.com/Schooleradz" target="_blank" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/schoolera" target="_blank" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>

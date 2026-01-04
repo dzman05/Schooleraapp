@@ -105,7 +105,8 @@
             color: var(--primary)
         }
 
-        .btn-primary {
+        .btn-primary,
+        .btn-secondary {
             display: inline-block;
             padding: 0.8rem 1.5rem;
             border-radius: 50px;
@@ -113,6 +114,9 @@
             text-decoration: none;
             transition: all 0.3s ease;
             cursor: pointer;
+        }
+
+        .btn-primary {
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
             box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4)
@@ -121,6 +125,25 @@
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6)
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--light);
+            transform: translateY(-2px);
+        }
+
+        .bg-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .text-white {
+            color: white !important;
         }
 
         /* Blog Header */
@@ -326,110 +349,258 @@
 
     <main class="container">
         <div class="blog-grid">
-            <!-- Article 1 -->
             <article class="blog-card">
                 <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
                 <div class="blog-content">
-                    <h3>أفضل نظام إدارة مدارس في العالم العربي 2026</h3>
-                    <p>لماذا يتصدر برنامج سكوليرا (Schoolera) قائمة البرامج المفضلة للمدارس الخاصة في السعودية، مصر،
-                        والخليج؟</p>
-                    <a href="blog/best-school-management-system-arab-world-2026.html" class="read-more">اقرأ المزيد
-                        ←</a>
-                </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="blog-card">
-                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
-                <div class="blog-content">
-                    <h3>التحول الرقمي في التعليم: رؤية 2030 والشرق الأوسط</h3>
-                    <p>كيف تساهم التكنولوجيا في تحسين جودة التعليم وتسهيل المهام الإدارية للمديرين والمعلمين.</p>
-                    <a href="blog/digital-transformation-education-middle-east.html" class="read-more">اقرأ المزيد ←</a>
-                </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="blog-card">
-                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
-                <div class="blog-content">
-                    <h3>مراجعة شاملة لبرنامج Schoolera ERP للمؤسسات التعليمية</h3>
-                    <p>تعرف على الأدوات المالية والإدارية التي جعلت سكوليرا الحل المتكامل لإدارة المدارس.</p>
-                    <a href="blog/schoolera-erp-educational-institutions-review.html" class="read-more">اقرأ المزيد
-                        ←</a>
-                </div>
-            </article>
-
-            <!-- Article 4 -->
-            <article class="blog-card">
-                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
-                <div class="blog-content">
-                    <h3>أتمتة تنبيهات الواتساب: ثورة في التواصل المدرسي</h3>
-                    <p>كيف غيرت رسائل الواتساب الآلية وجه العلاقة بين المدرسة وأولياء الأمور في سكوليرا.</p>
-                    <a href="blog/whatsapp-automation-schools-parents-engagement.html" class="read-more">اقرأ المزيد
-                        ←</a>
-                </div>
-            </article>
-
-            <!-- Article 5 -->
-            <article class="blog-card">
-                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
-                <div class="blog-content">
-                    <h3>تنظيم الامتحانات وسجلات الطلاب رقمياً</h3>
-                    <p>وداعاً للأوراق! اكتشف كيف يدير سكوليرا الامتحانات والنتائج والشهادات بضغطة زر.</p>
-                    <a href="blog/organizing-exams-student-records-digital-solutions.html" class="read-more">اقرأ المزيد
-                        ←</a>
-                </div>
-            </article>
-
-            <!-- Article 6 -->
-            <article class="blog-card">
-                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
-                <div class="blog-content">
-                    <h3>مستقبل إدارة مراكز التكوين واللغات</h3>
-                    <p>استخدام التطبيقات الذكية في تنظيم الدورات التدريبية والأفواج لضمان أقصى كفاءة.</p>
-                    <a href="blog/future-of-training-centers-management-smart-apps.html" class="read-more">اقرأ المزيد
-                        ←</a>
-                </div>
-            </article>
-
-            <!-- Article 7 -->
-            <article class="blog-card">
-                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
-                <div class="blog-content">
-                    <h3>أفضل برنامج محاسبي للمدارس الخاصة (السعودية، الإمارات، مصر)</h3>
-                    <p>لماذا تحتاج مدرستك إلى نظام مالي مدمج بدلاً من ملفات Excel التقليدية؟</p>
+                    <h3>أفضل برنامج محاسبي للمدارس الخاصة (السعودية، الإمارات، مصر) - سكوليرا | الإدارة المالية الذكية
+                    </h3>
+                    <p>تبحث عن برنامج حاسمة لمدرستك؟ اكتشف لماذا يعتبر سكوليرا (Schoolera) الأفضل لإدارة الرسوم
+                        والمصاريف في المدارس بالسعودية والإمارات ومصر لعام 2026.</p>
                     <a href="blog/accounting-software-for-private-schools-saudi-uae-egypt.html" class="read-more">اقرأ
                         المزيد ←</a>
                 </div>
             </article>
-
-            <!-- Article 8 -->
             <article class="blog-card">
                 <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
                 <div class="blog-content">
-                    <h3>نظام سطح المكتب vs الأنظمة السحابية: ماذا تختار لمدرستك؟</h3>
-                    <p>مقارنة شاملة بين البرامج المحلية (مثل سكوليرا) والبرامج السحابية من حيث الأمان والتكلفة.</p>
+                    <h3>المهام الروتينية تُرهق إدارتك؟ كيف يوفر Schoolera تلقائية كاملة للحضور والتقارير</h3>
+                    <p>حرر موظفيك من الأعمال الروتينية المملة. دع Schoolera يتكفل بالحضور، الفواتير، والتقارير لتتفرغ
+                        أنت للتطوير.</p>
+                    <a href="blog/automated-school-tasks.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أفضل نظام إدارة مدارس في العالم العربي 2026 - سكوليرا (Schoolera) | تحليل شامل</h3>
+                    <p>دليل شامل حول أفضل نظام إدارة مدارس في الوطن العربي لعام 2026. اكتشف لماذا يعتبر سكوليرا
+                        (Schoolera) الحل الأمثل للمدارس في السعودية والجزائر ومصر.</p>
+                    <a href="blog/best-school-management-system-arab-world-2026.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>نظام سطح المكتب vs الأنظمة السحابية: ماذا تختار لمدرستك في 2026؟ - سكوليرا | دليل شامل</h3>
+                    <p>مقارنة تقنية وشاملة بين برامج إدارة المدارس المحلية والسحابية. اكتشف لماذا يفضل المديرون العرب
+                        سكوليرا (Schoolera) من حيث الأمان والتكلفة والأداء.</p>
                     <a href="blog/cloud-vs-desktop-school-management-pros-cons.html" class="read-more">اقرأ المزيد ←</a>
                 </div>
             </article>
-
-            <!-- Article 9 -->
             <article class="blog-card">
                 <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
                 <div class="blog-content">
-                    <h3>قصص نجاح من المدارس العربية مع سكوليرا</h3>
-                    <p>كيف ساعد Schoolera مئات المؤسسات التعليمية في تنظيم أعمالها وزيادة أرباحها.</p>
+                    <h3>تعارضات الجداول الزمنية اليومية: تنظيم الدورات والأفواج بسهولة مع Schoolera</h3>
+                    <p>جدول توقيت خالٍ من التعارضات. نظم القاعات، الأفواج، والأساتذة بذكاء وسهولة.</p>
+                    <a href="blog/course-scheduling.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>من البيانات الخام إلى قرارات ذكية: كيف يساعد Schoolera في تحليل المداخيل والحضور بسهولة</h3>
+                    <p>حول الأرقام إلى استراتيجيات. استخدم تحليلات Schoolera لمعرفة الدورات الأكثر ربحية والطلاب الأكثر
+                        التزاماً.</p>
+                    <a href="blog/data-driven-decisions.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>التحول الرقمي في التعليم: رؤية 2030 والشرق الأوسط - سكوليرا | دليل شامل</h3>
+                    <p>كيف يساهم التحول الرقمي في تطوير التعليم بالشرق الأوسط؟ اكتشف دور سكوليرا (Schoolera) في تحقيق
+                        رؤية 2030 من خلال تقنيات إدارة المدارس الحديثة.</p>
+                    <a href="blog/digital-transformation-education-middle-east.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>الرؤية التعليمية 2030 وتكامل التكنولوجيا: بناء مدارس المستقبل - سكوليرا</h3>
+                    <p>كيف يساهم سكوليرا (Schoolera) في تحقيق الرؤى الوطنية للتعليم 2030؟ استعرض دور التكنولوجيا في بناء
+                        أجيال المستقبل وضمان جودة البيئة التعليمية الرقمية.</p>
+                    <a href="blog/education-vision-2030-technology-integration.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>مشاكل تتبع الرسوم والديون: النظام المالي الاحترافي في Schoolera يدير الأقساط والفواتير آلياً
+                    </h3>
+                    <p>نظام مالي يدقق كل مليم. تتبع الديون، الأقساط، والخصومات بدقة متناهية.</p>
+                    <a href="blog/fee-management.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>صعوبة إعداد تقارير الأداء المالي؟ لوحة تحكم تفاعلية في Schoolera توفر رسوم بيانية فورية</h3>
+                    <p>راقب صحة مدرستك المالية في الوقت الحقيقي. مداخيل، مصاريف، وأرباح صافية في لوحة تحكم واحدة.</p>
+                    <a href="blog/financial-dashboard.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>مستقبل إدارة مراكز التكوين واللغات: دور التطبيقات الذكية - سكوليرا | رقمنة المهارات</h3>
+                    <p>كيف تساهم التطبيقات الذكية في إدارة مراكز اللغات والمهارات بكفاءة؟ اكتشف حلول سكوليرا (Schoolera)
+                        المتطورة لتنظيم الأفواج والدورات التدريبية لعام 2026.</p>
+                    <a href="blog/future-of-training-centers-management-smart-apps.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>مقارنة التكاليف الخفية في برامج إدارة المدارس: الاشتراك vs التمليك</h3>
+                    <p>اكتشف الحقيقة حول تكاليف الأنظمة السحابية الشهرية مقارنة بنظام التمليك (Lifetime License). كيف
+                        توفر ملايين السنتيمات سنوياً باختيار نظام إدارة مدارس ذكي.</p>
+                    <a href="blog/hidden-costs-school-software.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>تأخر الإشعارات عن الأقساط والحضور? Schoolera يرسل تذكيرات فورية عبر واتساب مباشرة</h3>
+                    <p>حسن التحصيل المالي لمدرستك. تذكيرات آلية ودبلوماسية بمواعيد الدفع عبر واتساب ترفع نسبة التحصيل بـ
+                        40%.</p>
+                    <a href="blog/instant-fee-reminders.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>تنظيم الامتحانات وسجلات الطلاب رقمياً - سكوليرا | وداعاً للفوضى الورقية</h3>
+                    <p>وداعاً للأوراق وضياع الملفات! اكتشف كيف يساعدك سكوليرا (Schoolera) في تنظيم امتحانات وسجلات طلابك
+                        رقمياً بضغطة زر. حلول ذكية لمدارس 2026.</p>
+                    <a href="blog/organizing-exams-student-records-digital-solutions.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>تسجيل الحضور اليدوي يأخذ وقتك؟ Schoolera يقدم بطاقات QR Code لتسجيل فوري وتلقائي</h3>
+                    <p>وداعاً لدفتر الغياب. سجل حضور مئات الطلاب في دقائق باستخدام تقنية QR Code المتطورة من Schoolera.
+                    </p>
+                    <a href="blog/qr-attendance.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>فقدان البيانات يهدد مدارسك؟ اكتشف نسخ احتياطي ذكي وتقنية Anti-Crash مع Schoolera</h3>
+                    <p>لا تخاطر بضياع مجهود سنوات. تعرف على تقنيات النسخ الاحتياطي التلقائي ومكافحة التوقف المفاجئ في
+                        برنامج Schoolera.</p>
+                    <a href="blog/school-data-backup.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>فوضى البيانات في المدارس الخاصة: كيف يوفر Schoolera إدارة مركزية آمنة بعيدة عن السحابة؟</h3>
+                    <p>هل تعاني من تشتت بيانات مدرستك بين ملفات Excel والأوراق؟ اكتشف كيف يجمع Schoolera كل شيء في مكان
+                        واحد آمن بعيداً عن مخاطر السحابة.</p>
+                    <a href="blog/school-data-chaos.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أين بيانات طلابك؟ مخاطر الأنظمة السحابية والسيادة الرقمية</h3>
+                    <p>هل بيانات مدرستك آمنة؟ تعرف على مخاطر تخزين بيانات الطلاب على سيرفرات خارجية وكيف يضمن نظام
+                        Schoolera خصوصية كاملة وسيادة على معلوماتك.</p>
+                    <a href="blog/school-data-privacy-security.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>إهدار الموارد والمخزون في المدارس: Schoolera يقدم مراقبة دقيقة وتقارير يومية</h3>
+                    <p>توقف عن الهدر. راقب مخزون الكتب، الأدوات، والتجهيزات بدقة مع نظام المخزون المدمج.</p>
+                    <a href="blog/school-inventory.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>إدارة المدارس أثناء انقطاع الإنترنت في البكالوريا 2026: الدليل الكامل</h3>
+                    <p>كيف تدير مدرستك الخاصة أثناء انقطاع الإنترنت في البكالوريا؟ اكتشف الحلول العملية لتشغيل نظام
+                        الإدارة المدرسي بدون إنترنت (Offline) وتجنب توقف العمل في الجزائر.</p>
+                    <a href="blog/school-management-offline-baccalaureate.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>مراجعة شاملة لبرنامج Schoolera ERP للمؤسسات التعليمية - سكوليرا | هل يستحق الاستثمار؟</h3>
+                    <p>اقرأ مراجعتنا العميقة لبرنامج Schoolera ERP المخصص لإدارة المدارس والمعاهد. تعرف على الأدوات
+                        المتطورة والتقنيات التي تجعل سكوليرا يتصدر السوق العربي.</p>
+                    <a href="blog/schoolera-erp-educational-institutions-review.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>قصص نجاح من المدارس العربية مع سكوليرا - Schoolera | تجارب واقعية ملهمة</h3>
+                    <p>اقرأ قصص نجاح ملهمة لمدارس ومراكز تعليمية في الوطن العربي غيرت مجرى إدارتها باستخدام سكوليرا
+                        (Schoolera). تجارب حقيقية للتحول الرقمي والنمو.</p>
                     <a href="blog/schoolera-success-stories-arab-schools.html" class="read-more">اقرأ المزيد ←</a>
                 </div>
             </article>
-
-            <!-- Article 10 -->
+            <article class="blog-card" style="border: 2px solid var(--primary);">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>Schoolera vs Skolera: لماذا تختار الحلول التي تعمل بدون إنترنت (Offline) في 2026؟</h3>
+                    <p>مقارنة شاملة بين برنامج Schoolera (سكوليرا) ونظام Skolera السحابي. اكتشف لماذا تعتبر الحلول التي
+                        تعمل بدون إنترنت والرخص مدى الحياة الخيار الأذكى للمدارس الجزائرية والعربية.</p>
+                    <a href="blog/schoolera-vs-skolera-comparison.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
             <article class="blog-card">
                 <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
                 <div class="blog-content">
-                    <h3>الرؤية التعليمية 2030 وتكامل التكنولوجيا</h3>
-                    <p>كيف يتماشى سكوليرا مع الرؤى الوطنية للدول العربية في تطوير المنظومة التعليمية الرقمية.</p>
-                    <a href="blog/education-vision-2030-technology-integration.html" class="read-more">اقرأ المزيد ←</a>
+                    <h3>إدارة ملفات الطلاب معقدة؟ Schoolera يبسط التسجيل، الأرشيف، وبطاقات الطلاب بـQR</h3>
+                    <p>نظام ملفات إلكتروني شامل. وثائق، صور، وسجل أكاديمي ومالي لكل طالب في صفحة واحدة.</p>
+                    <a href="blog/student-files-qr.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>تحديات رواتب المعلمين والموظفين: نظام إدارة الأساتذة المتكامل في Schoolera</h3>
+                    <p>حساب دقيق وعادل للرواتب. سواء بالساعة، بالنسبة، أو براتب ثابت، Schoolera يضمن حق الجميع.</p>
+                    <a href="blog/teacher-management.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أفضل 5 أنظمة لإدارة المدارس في العالم العربي 2026 (مراجعة شاملة)</h3>
+                    <p>قائمة بأفضل برامج تسيير المدارس في الجزائر والعالم العربي لعام 2026. مقارنة بين الأنظمة السحابية
+                        والأنظمة المكتبية (Offline) لمساعدتك في اختيار الأفضل لمدرستك.</p>
+                    <a href="blog/top-5-school-management-systems-2026.html" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>أتمتة تنبيهات الواتساب: ثورة في التواصل المدرسي - سكوليرا | رفع رضا أولياء الأمور</h3>
+                    <p>كيف تحسن أتمتة رسائل الواتساب من تواصل مدرستك مع أولياء الأمور؟ اكتشف ثورة التواصل في سكوليرا
+                        (Schoolera) وأثرها على تحصيل الرسوم المدرسية.</p>
+                    <a href="blog/whatsapp-automation-schools-parents-engagement.html" class="read-more">اقرأ المزيد
+                        ←</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('assets/img/school_dashboard_mockup.webp')"></div>
+                <div class="blog-content">
+                    <h3>ضعف التواصل مع أولياء الأمور ف الوطن العربي: تنبيهات واتساب الذكية من Schoolera تغير اللعبة</h3>
+                    <p>اجعل ولي الأمر شريكاً في النجاح. تواصل فوراً عبر واتساب لإرسال النتائج، الغيابات، والمستحقات
+                        المالية.</p>
+                    <a href="blog/whatsapp-notifications.html" class="read-more">اقرأ المزيد ←</a>
                 </div>
             </article>
         </div>

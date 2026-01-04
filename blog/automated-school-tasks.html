@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهام الروتينية تُرهق إدارتك؟ كيف يوفر Schoolera تلقائية كاملة للحضور والتقارير</title>
+    <meta name="description" content="حرر موظفيك من الأعمال الروتينية المملة. دع Schoolera يتكفل بالحضور، الفواتير، والتقارير لتتفرغ أنت للتطوير.">
+    <meta name="keywords" content="اتمتة المدارس, School automation, تقليل العمل الاداري">
+    <link rel="icon" type="image/webp" href="../assets/img/Logo.webp">
+    <style>
+        @font-face { font-family: 'Cairo'; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2'); }
+        @font-face { font-family: 'Cairo'; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2'); }
+        :root { --primary: #4F46E5; --primary-dark: #4338ca; --secondary: #ec4899; --accent: #8b5cf6; --dark: #0f172a; --light: #f8fafc; --gray: #475569; --success: #10b981; --danger: #ef4444; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cairo', sans-serif; background-color: #f1f5f9; color: var(--dark); line-height: 1.6; padding-top: 100px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .article-container { max-width: 900px; background: white; margin: 2rem auto; padding: 3rem; border-radius: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); }
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 1rem 0; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); transition: all 0.3s ease; }
+        .navbar-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.5rem; font-weight: 900; color: var(--primary); }
+        .logo img { height: 60px; }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-links a:not(.btn-primary) { text-decoration: none; color: var(--gray); font-weight: 600; transition: color 0.3s; font-size: 0.95rem; }
+        .nav-links a:not(.btn-primary):hover { color: var(--primary); }
+        .menu-toggle { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1001; }
+        .menu-toggle span { width: 30px; height: 3px; background: var(--primary); border-radius: 3px; transition: all 0.3s ease; }
+        @media (max-width: 992px) { .menu-toggle { display: flex; } .nav-links { position: fixed; top: 0; right: -100%; width: 80%; max-width: 350px; height: 100vh; background: white; flex-direction: column; justify-content: center; gap: 2rem; transition: all 0.4s ease; box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1); z-index: 1000; } .nav-links.active { right: 0; display: flex !important; } }
+        .btn-primary { display: inline-block; padding: 0.8rem 1.5rem; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6); }
+        article h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem; line-height: 1.3; }
+        article h2 { font-size: 1.8rem; margin-top: 2.5rem; color: var(--dark); border-right: 6px solid var(--primary); padding-right: 15px; }
+        article p { font-size: 1.15rem; margin-bottom: 1.5rem; text-align: justify; }
+        .cta-box { background: linear-gradient(135deg, var(--dark), var(--primary)); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin-top: 4rem; }
+        .btn { display: inline-block; padding: 1.2rem 2.5rem; background: white; color: var(--primary); text-decoration: none; border-radius: 50px; font-weight: 800; margin-top: 1.5rem; transition: transform 0.3s; }
+        .btn:hover { transform: scale(1.05); }
+        footer { background: var(--dark); color: white; padding: 3rem 0; text-align: center; margin-top: 4rem; }
+        .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+        .social-links { display: flex; gap: 1.5rem; font-size: 1.5rem; }
+        .social-links a { color: white; transition: color 0.3s; }
+        .social-links a:hover { color: var(--primary); }
+        .faq-section { margin-top: 3rem; background: #f9fafb; padding: 2rem; border-radius: 20px; }
+        .faq-item { margin-bottom: 1rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem; }
+        .faq-question { font-weight: 700; cursor: pointer; font-size: 1.1rem; color: var(--primary-dark); }
+        .faq-answer { margin-top: 0.5rem; color: var(--gray); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كيف يساعد Schoolera في هذا المجال؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يوفر Schoolera أدوات مخصصة وتقارير ذكية وتلقائية كاملة لتبسيط هذه العمليات وتوفير الوقت والجهد."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/Logo.webp" alt="Schoolera" style="height: 60px; width: auto;">
+                <span class="logo-text">Schoolera | سكوليرا</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">المميزات</a>
+                <a href="../index.html#pricing">الأسعار</a>
+                <a href="../blog.html" style="color: var(--primary)">المدونة</a>
+                <a href="../index.html#contact" class="btn-primary">اتصل بنا</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <article class="container article-container">
+        <h1>المهام الروتينية تُرهق إدارتك؟ كيف يوفر Schoolera تلقائية كاملة للحضور والتقارير</h1>
+        
+        <p>هل يقضي فريقك وقتاً طويلاً في كتابة الوصولات يدوياً، أو حساب الديون المتبقية، أو تجميع قوائم الغياب؟ هذا هدر للموارد البشرية.</p>
+        <h2>الأتمتة الشاملة (Full Automation)</h2>
+        <p>صمم <strong>Schoolera</strong> ليقوم بالعمل الشاق نيابة عنك:</p>
+        <ul>
+            <li>توليد الفواتير وإرسالها آلياً نهاية الشهر.</li>
+            <li>حساب رواتب الأساتذة بناءً على ساعات العمل والحضور.</li>
+            <li>تنبيهك بالطلاب الذين أوشكوا على إنهاء اشتراكاتهم.</li>
+        </ul>
+        
+        <div class="cta-box">
+            <h2>طور مدرستك اليوم</h2>
+            <p>انضم لمئات المدارس الناجحة التي تستخدم Schoolera.</p>
+            <a href="../index.html#pricing" class="btn">اشترك الآن</a>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Schoolera. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
