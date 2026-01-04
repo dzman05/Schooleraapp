@@ -2,31 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://schoolera.site/</loc>
-        <lastmod>2025-12-29</lastmod>
+        <lastmod>2026-01-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://schoolera.site/calculator.html</loc>
-        <lastmod>2026-01-01</lastmod>
+        <lastmod>2026-01-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://schoolera.site/blog.html</loc>
-        <lastmod>2026-01-01</lastmod>
+        <lastmod>2026-01-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Blog Articles -->
-    <url><loc>https://schoolera.site/blog/best-school-management-system-arab-world-2026.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/digital-transformation-education-middle-east.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/schoolera-erp-educational-institutions-review.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/whatsapp-automation-schools-parents-engagement.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/organizing-exams-student-records-digital-solutions.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/future-of-training-centers-management-smart-apps.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/accounting-software-for-private-schools-saudi-uae-egypt.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/cloud-vs-desktop-school-management-pros-cons.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/schoolera-success-stories-arab-schools.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://schoolera.site/blog/education-vision-2030-technology-integration.html</loc><lastmod>2026-01-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/best-school-management-system-arab-world-2026.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/digital-transformation-education-middle-east.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/schoolera-erp-educational-institutions-review.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/whatsapp-automation-schools-parents-engagement.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/organizing-exams-student-records-digital-solutions.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/future-of-training-centers-management-smart-apps.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/accounting-software-for-private-schools-saudi-uae-egypt.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/cloud-vs-desktop-school-management-pros-cons.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/schoolera-success-stories-arab-schools.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/education-vision-2030-technology-integration.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/automated-school-tasks.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/course-scheduling.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/data-driven-decisions.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/fee-management.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/financial-dashboard.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/hidden-costs-school-software.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/instant-fee-reminders.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/qr-attendance.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/school-data-backup.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/school-data-chaos.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/school-data-privacy-security.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/school-inventory.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/school-management-offline-baccalaureate.html</loc><lastmod>2026-01-04</lastmod><priority>0.8</priority></url>
+    <url><loc>https://schoolera.site/blog/schoolera-vs-skolera-comparison.html</loc><lastmod>2026-01-04</lastmod><priority>0.8</priority></url>
+    <url><loc>https://schoolera.site/blog/student-files-qr.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/teacher-management.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
+    <url><loc>https://schoolera.site/blog/top-5-school-management-systems-2026.html</loc><lastmod>2026-01-04</lastmod><priority>0.8</priority></url>
+    <url><loc>https://schoolera.site/blog/whatsapp-notifications.html</loc><lastmod>2026-01-04</lastmod><priority>0.7</priority></url>
 </urlset>
