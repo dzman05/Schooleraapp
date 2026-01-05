@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل النسخة التجريبية - سكوليرا (Schoolera) 2026 | ابدأ الآن مجاناً</title>
+    <meta name="description"
+        content="قم بتحميل النسخة التجريبية من برنامج سكوليرا لإدارة المدارس. جرب كافة المميزات لمدة 7 أيام مجاناً واكتشف كيف يمكن للرقمنة أن تغير مدرستك.">
+    <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
+
+    <style>
+        @font-face {
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
+        }
+
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #4338ca;
+            --secondary: #ec4899;
+            --accent: #8b5cf6;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #475569;
+            --surface: rgba(255, 255, 255, 0.9);
+            --glass: rgba(255, 255, 255, 0.7);
+            --border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1)
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+            color: var(--dark);
+            line-height: 1.8;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary) 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a:not(.btn-primary) {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:not(.btn-primary)::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:not(.btn-primary):hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:not(.btn-primary):hover::after {
+            width: 100%;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: var(--primary);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .download-hero {
+            padding: 160px 0 100px;
+            text-align: center;
+            background: radial-gradient(circle at center, #e0e7ff 0%, #f8fafc 100%);
+        }
+
+        .download-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .download-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: -80px auto 60px;
+            text-align: center;
+        }
+
+        .version-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            color: var(--gray);
+            font-weight: 600;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 1.5rem 4rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .btn-download:hover {
+            transform: scale(1.05);
+        }
+
+        .requirements {
+            background: white;
+            border-radius: 25px;
+            padding: 3rem;
+            margin: 40px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .requirements h2 {
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .req-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .req-item i {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .installation-guide {
+            padding: 80px 0;
+        }
+
+        .installation-guide h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .guide-step {
+            display: flex;
+            gap: 3rem;
+            align-items: flex-start;
+            margin-bottom: 4rem;
+        }
+
+        .step-num {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        .guide-step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .demo-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+        }
+
+        .demo-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1)
+        }
+    </style>
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Logo.webp" alt="Schoolera" style="height: 50px; width: auto;">
+                <span class="logo-text">Schoolera | سكوليرا</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#features">المميزات</a>
+                <a href="blog.html">المدونة</a>
+                <a href="testimonials.html">العملاء</a>
+                <a href="demo.html">التحميل</a>
+                <a href="faq.html">FAQ</a>
+                <a href="support.html" class="btn-primary">الدعم الفني</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="download-hero">
+        <div class="container">
+            <h1>اختبر مستقبل مدرستك اليوم</h1>
+            <p>لا تشترِ البرنامج بناءً على كلامنا فقط، جربه بنفسك واكتشف القوة والسهولة.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="download-card">
+            <div class="version-info">
+                <span><i class="fas fa-code-branch"></i> الإصدار: 2026.1.0</span>
+                <span><i class="fas fa-file-archive"></i> الحجم: 54 MB</span>
+                <span><i class="fas fa-calendar-alt"></i> تاريخ التحديث: 01-01-2026</span>
+            </div>
+            <a href="https://drive.google.com/uc?export=download&id=1Br5mFmXrXrD20th0gSpjZhHsdtBz6Krh"
+                class="btn-download">
+                <i class="fas fa-download"></i> تحميل النسخة التجريبية (مجاناً)
+            </a>
+            <p style="color: var(--gray); font-size: 0.9rem;">
+                النسخة التجريبية تمنحك وصولاً كاملاً لجميع المميزات لمدة 7 أيام.
+            </p>
+        </div>
+
+        <section class="requirements">
+            <h2>متطلبات التشغيل (System Requirements)</h2>
+            <div class="req-grid">
+                <div class="req-item">
+                    <i class="fab fa-windows"></i>
+                    <h4>نظام التشغيل</h4>
+                    <p>Windows 10 / 11 (64-bit)</p>
+                </div>
+                <div class="req-item">
+                    <i class="fas fa-memory"></i>
+                    <h4>الذاكرة (RAM)</h4>
+                    <p>4 GB أو أكثر لسرعة مثالية</p>
+                </div>
+                <div class="req-item">
+                    <i class="fas fa-hdd"></i>
+                    <h4>المساحة الحرة</h4>
+                    <p>أقل من 200 MB للتثبيت</p>
+                </div>
+                <div class="req-item">
+                    <i class="fas fa-microchip"></i>
+                    <h4>المعالج</h4>
+                    <p>Intel Core i3 أو ما يعادله</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="installation-guide">
+            <h2>خطوات التثبيت والتشغيل</h2>
+            <div class="guide-step">
+                <div class="step-num">1</div>
+                <div>
+                    <h3>تحميل وفك الضغط</h3>
+                    <p>بعد اكتمال التحميل، قم بفك ضغط ملف الزيب (ZIP) في مجلد خاص على جهازك. تجنب وضعه في مجلد
+                        "Downloads" بشكل دائم؛ يفضل نقله إلى القرص D أو E لضمان ثبات المسار.</p>
+                </div>
+            </div>
+            <div class="guide-step">
+                <div class="step-num">2</div>
+                <div>
+                    <h3>تشغيل البرنامج كمسؤول</h3>
+                    <p>انقر بيمين الفأرة على ملف `Schoolera.exe` واختر "Run as Administrator". هذه الخطوة ضرورية ليتمكن
+                        البرنامج من إنشاء قاعدة البيانات المحلية الخاصة بك ومنحها صلاحيات الكتابة والقراءة اللازمة.</p>
+                </div>
+            </div>
+            <div class="guide-step">
+                <div class="step-num">3</div>
+                <div>
+                    <h3>ابدأ الاستكشاف</h3>
+                    <p>سيفتح البرنامج مباشرة على اللوحة الرئيسية. يمكنك البدء بإضافة طلاب وهميين، تجربة تسجيل الحضور،
+                        واستخراج بطاقات الطلاب لتشعر بمدى سرعة وسلاسة النظام. لا تتردد في العبث بالإعدادات واكتشاف كافة
+                        الخبايا.</p>
+                </div>
+            </div>
+        </section>
+
+        <article style="margin: 60px 0; font-size: 1.1rem; color: #334155;">
+            <h2
+                style="font-size: 2rem; margin-bottom: 2rem; color: var(--dark); border-right: 5px solid var(--primary); padding-right: 15px;">
+                لماذا ستحب نسخة سكوليرا التجريبية؟</h2>
+            <p>
+                نحن نعلم أن قرار اعتماد نظام إدارة مدرسي هو قرار مصيري، ولذلك اخترنا أن نكون شفافين تماماً. النسخة
+                التجريبية التي ستحملها الآن هي "نفس النسخة" التي يستلمها العميل النهائي، دون أي قيود برمجية باستثناء
+                المدة الزمنية. هذا يعني أنك ستتمكن من رؤية كيف يعمل النظام فعلياً في بيئة العمل الحقيقية لمدرستك.
+            </p>
+            <p>
+                ستكتشف خلال تجربتك أن سكوليرا صمم بعناية فائقة ليكون "خفيفاً" على الجهاز و"ثقيلاً" في الإمكانيات. ستلاحظ
+                الفرق في سرعة التنقل بين ملفات الطلاب، وفي دقة التقارير المالية التي يتم توليدها في لمح البصر. البرنامج
+                لا يستهلك موارد جهازك، ويعمل بهدوء في الخلفية ليتكفل بكافة المهام المعقدة.
+            </p>
+            <p>
+                أهم ما سيلفت انتباهك هو سهولة توليد بطاقات الطلاب (ID Cards) والباركود. جرب طباعة عينة واحدة واستخدم أي
+                تطبيق قارئ باركود على هاتفك، وسترى كيف أن سكوليرا يحول البيانات النصية إلى أكواد ذكية قابلة للقراءة. هذا
+                المستوى من الرقمنة هو ما سيرفع من هيبة مدرستك أمام أولياء الأمور والطلاب.
+            </p>
+            <p>
+                بعد انتهاء الـ 7 أيام التجريبية، لا تخف على بياناتك التي أدخلتها؛ فهي ستبقى مخزنة على جهازك بأمان. بمجرد
+                شرائك للرخصة مدى الحياة وتفعيل البرنامج بمفتاح التفعيل، سيفتح البرنامج معك من حيث توقفت تماماً، ولن
+                تحتاج لإعادة إدخال أي معلومة. هذه هي مرونة سكوليرا.
+            </p>
+            <p>
+                حمل البرنامج الآن وانضم إلى مئات المديرين الذين وجدوا في سكوليرا ضالتهم المنشودة. نحن نثق أنك بمجرد أن
+                تبدأ في استخدامه، لن تتخيل كيف كانت مدرستك تسير بدونه. استمتع برحلة الرقمنة!
+            </p>
+        </article>
+
+        <p style="text-align: center; margin-top: 4rem;">
+            <a href="testimonials.html"
+                style="color: var(--primary); text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--primary);">اطلع
+                على شهادات العملاء قبل التحميل</a>
+        </p>
+    </main>
+
+    <!-- Same Footer as index.html -->
+    <footer class="main-footer"
+        style="background: #0f172a; color: white; padding: 80px 0 30px; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.05); text-align: right;">
+        <!-- Subtle Background Decoration -->
+        <div
+            style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(79, 70, 229, 0.05) 0%, transparent 70%); pointer-events: none;">
+        </div>
+
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 50px; position: relative; z-index: 1;">
+            <!-- Brand & Mission -->
+            <div class="footer-col">
+                <div style="margin-bottom: 25px;">
+                    <img src="assets/img/Logo.webp" alt="Logo" style="height: 45px; margin-bottom: 10px;">
+                    <h3
+                        style="font-size: 1.8rem; font-weight: 900; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                        سكوليرا</h3>
+                </div>
+                <p style="color: #94a3b8; font-size: 1rem; line-height: 1.8; margin-bottom: 30px;">
+                    نظام متطور لإدارة المدارس يجمع بين البساطة والقوة. صمم خصيصاً ليناسب الواقع التعليمي في الوطن العربي
+                    مع ضمان خصوصية بياناتك الكاملة.
+                </p>
+                <div class="social-links" style="display: flex; gap: 15px;">
+                    <a href="https://web.facebook.com/Schooleradz" target="_blank"
+                        style="width: 45px; height: 45px; background: rgba(255,255,255,0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: 0.3s;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/schoolera" target="_blank"
+                        style="width: 45px; height: 45px; background: rgba(255,255,255,0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: 0.3s;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/schoolera" target="_blank"
+                        style="width: 45px; height: 45px; background: rgba(255,255,255,0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: 0.3s;"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/213660639890" target="_blank"
+                        style="width: 45px; height: 45px; background: rgba(37, 211, 102, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #25D366; text-decoration: none; transition: 0.3s;"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Fast Links -->
+            <div class="footer-col">
+                <h4
+                    style="font-size: 1.3rem; margin-bottom: 30px; font-weight: 700; color: #fff; border-right: 4px solid var(--primary); padding-right: 15px;">
+                    روابط سريعة</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;"><a href="index.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">الصفحة الرئيسية</a></li>
+                    <li style="margin-bottom: 12px;"><a href="about.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">من نحن</a></li>
+                    <li style="margin-bottom: 12px;"><a href="blog.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">المدونة التعليمية</a></li>
+                    <li style="margin-bottom: 12px;"><a href="testimonials.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">شهادات النجاح</a></li>
+                    <li style="margin-bottom: 12px;"><a href="demo.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">النسخة التجريبية</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Center -->
+            <div class="footer-col">
+                <h4
+                    style="font-size: 1.3rem; margin-bottom: 30px; font-weight: 700; color: #fff; border-right: 4px solid var(--primary); padding-right: 15px;">
+                    مركز المساعدة</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;"><a href="support.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">الدعم الفني المباشر</a>
+                    </li>
+                    <li style="margin-bottom: 12px;"><a href="faq.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">الأسئلة المتكررة</a></li>
+                    <li style="margin-bottom: 12px;"><a href="privacy.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">سياسة الخصوصية</a></li>
+                    <li style="margin-bottom: 12px;"><a href="terms.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">اتفاقية الاستخدام</a></li>
+                    <li style="margin-bottom: 12px;"><a href="calculator.html"
+                            style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">حاسبة التوفير</a></li>
+                </ul>
+            </div>
+
+            <!-- Direct Contact -->
+            <div class="footer-col">
+                <h4
+                    style="font-size: 1.3rem; margin-bottom: 30px; font-weight: 700; color: #fff; border-right: 4px solid var(--primary); padding-right: 15px;">
+                    تواصل معنا</h4>
+                <div style="color: #cbd5e1;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(79, 70, 229, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span style="font-weight: 600;">0660639890</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(79, 70, 229, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span style="font-weight: 600;">contact@schoolera.site</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(79, 70, 229, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span style="font-weight: 600;">باتنة، الجزائر</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container"
+            style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
+            <p style="color: #64748b; font-size: 0.95rem;">&copy; 2026 <span
+                    style="color: #fff; font-weight: 700;">Schoolera</span>. جميع الحقوق محفوظة. صُنع بكل فخر في
+                الجزائر.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -4,26 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تأخر الإشعارات عن الأقساط والحضور؟ Schoolera يرسل تذكيرات فورية عبر واتساب مباشرة</title>
+    <title>شروط الاستخدام - سكوليرا (Schoolera) | اتفاقية الترخيص والاستخدام</title>
     <meta name="description"
-        content="حسن التحصيل المالي لمدرستك. تذكيرات آلية ودبلوماسية بمواعيد الدفع عبر واتساب ترفع نسبة التحصيل بـ 40%.">
-    <meta name="keywords" content="تحصيل رسوم المدارس, تذكير الاقساط, ادارة ديون الطلاب">
-    <link rel="icon" type="image/webp" href="../assets/img/Logo.webp">
+        content="اقرأ شروط استخدام برنامج سكوليرا. تفاصيل حول رخصة مدى الحياة، التحديثات، حقوق الملكية الفكرية، والمسؤولية القانونية للمستخدم والمطور.">
+    <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
+
     <style>
         @font-face {
             font-family: 'Cairo';
             font-style: normal;
             font-weight: 400;
             font-display: swap;
-            src: url("../assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
-        }
-
-        @font-face {
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url("../assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
+            src: url("assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2") format('woff2');
         }
 
         :root {
@@ -34,37 +26,24 @@
             --dark: #0f172a;
             --light: #f8fafc;
             --gray: #475569;
-            --success: #10b981;
-            --danger: #ef4444;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --surface: rgba(255, 255, 255, 0.9);
+            --glass: rgba(255, 255, 255, 0.7);
+            --border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1)
         }
 
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #f1f5f9;
+            background-color: #f8fafc;
             color: var(--dark);
-            line-height: 1.6;
-            padding-top: 100px;
+            line-height: 1.8;
+            padding-bottom: 50px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-        }
-
-        .article-container {
-            max-width: 900px;
-            background: white;
-            margin: 2rem auto;
-            padding: 3rem;
-            border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         .navbar {
@@ -114,7 +93,7 @@
 
         .nav-links {
             display: flex;
-            gap: 1.2rem;
+            gap: 1.5rem;
             align-items: center;
         }
 
@@ -122,7 +101,7 @@
             text-decoration: none;
             color: var(--gray);
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
             position: relative;
         }
@@ -154,7 +133,6 @@
             text-decoration: none;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 0.9rem;
             transition: all 0.3s ease;
         }
 
@@ -163,203 +141,82 @@
             box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
         }
 
-        @media (max-width: 992px) {
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                max-width: 350px;
-                height: 100vh;
-                background: white;
-                flex-direction: column;
-                justify-content: center;
-                gap: 2rem;
-                transition: all 0.4s ease;
-                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
-                z-index: 1000;
-            }
-
-            .nav-links.active {
-                right: 0;
-                display: flex !important;
-            }
+        .header-section {
+            padding: 140px 0 60px;
+            text-align: center;
         }
 
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .menu-toggle span {
-            width: 30px;
-            height: 3px;
-            background: var(--primary);
-            border-radius: 3px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6);
-        }
-
-        article h1 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            line-height: 1.3;
-        }
-
-        article h2 {
-            font-size: 1.8rem;
-            margin-top: 2.5rem;
+        .header-section h1 {
+            font-size: 2.8rem;
             color: var(--dark);
-            border-right: 6px solid var(--primary);
-            padding-right: 15px;
         }
 
-        article p {
-            font-size: 1.15rem;
+        .content-card {
+            background: white;
+            padding: 4rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+            margin-top: 20px;
+        }
+
+        .content-card h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+        }
+
+        .content-card p {
             margin-bottom: 1.5rem;
             text-align: justify;
+            color: #4b5563;
         }
 
-        .cta-box {
-            background: linear-gradient(135deg, var(--dark), var(--primary));
-            color: white;
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            margin-top: 4rem;
+        .content-card ul {
+            margin-bottom: 2rem;
+            padding-right: 2rem;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 1.2rem 2.5rem;
-            background: white;
-            color: var(--primary);
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 800;
-            margin-top: 1.5rem;
-            transition: transform 0.3s;
+        .content-card li {
+            margin-bottom: 1rem;
+            color: #4b5563;
         }
 
-        .btn:hover {
-            transform: scale(1.05);
+        .legal-box {
+            background: #fff7ed;
+            border-right: 6px solid #f97316;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+            font-weight: 600;
+            color: #9a3412;
         }
 
         footer {
             background: var(--dark);
             color: white;
             padding: 3rem 0;
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 1.5rem;
-        }
-
-        .social-links a {
-            color: white;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--primary);
-        }
-
-        .faq-section {
-            margin-top: 3rem;
-            background: #f9fafb;
-            padding: 2rem;
-            border-radius: 20px;
-        }
-
-        .faq-item {
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 1rem;
-        }
-
-        .faq-question {
-            font-weight: 700;
-            cursor: pointer;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-        }
-
-        .faq-answer {
-            margin-top: 0.5rem;
-            color: var(--gray);
-            display: none;
-        }
-
-        .faq-item.active .faq-answer {
-            display: block;
+            border-top: 1px solid rgba(255, 255, 255, 0.1)
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "كيف يساعد Schoolera في هذا المجال؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يوفر Schoolera أدوات مخصصة وتقارير ذكية وتلقائية كاملة لتبسيط هذه العمليات وتوفير الوقت والجهد."
-          }
-        }
-      ]
-    }
-    </script>
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-content">
-            <a href="../index.html" class="logo">
-                <img src="../assets/img/Logo.webp" alt="Schoolera" style="height: 50px; width: auto;">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Logo.webp" alt="Schoolera" style="height: 50px; width: auto;">
                 <span class="logo-text">Schoolera | سكوليرا</span>
             </a>
             <div class="nav-links">
-                <a href="../index.html">الرئيسية</a>
-                <a href="../about.html">المميزات</a>
-                <a href="../blog.html">المدونة</a>
-                <a href="../testimonials.html">العملاء</a>
-                <a href="../demo.html">التحميل</a>
-                <a href="../faq.html">FAQ</a>
-                <a href="../support.html" class="btn-primary">الدعم الفني</a>
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#features">المميزات</a>
+                <a href="blog.html">المدونة</a>
+                <a href="testimonials.html">العملاء</a>
+                <a href="demo.html">التحميل</a>
+                <a href="faq.html">FAQ</a>
+                <a href="support.html" class="btn-primary">الدعم الفني</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span></span>
@@ -369,23 +226,101 @@
         </div>
     </nav>
 
-    <article class="container article-container">
-        <h1>تأخر الإشعارات عن الأقساط والحضور؟ Schoolera يرسل تذكيرات فورية عبر واتساب مباشرة</h1>
-
-        <p>تحصيل الرسوم الدراسية هو الشريان المالي للمدرسة، لكن المطالبة بالدفع قد تكون محرجة وصعبة الإدارة.</p>
-        <h2>نظام التحصيل الذكي</h2>
-        <p>يقوم <strong>Schoolera</strong> بمراقبة تواريخ الاستحقاق، ويرسل رسائل تذكير لطيفة وتلقائية للأولياء قبل
-            الموعد وبعده، مما يرفع نسبة الالتزام بالدفع بشكل ملحوظ ويحفظ العلاقة الطيبة مع الولي.</p>
-
-        <div class="cta-box">
-            <h2>طور مدرستك اليوم</h2>
-            <p>انضم لمئات المدارس الناجحة التي تستخدم Schoolera.</p>
-            <a href="../index.html#pricing" class="btn">اشترك الآن</a>
+    <header class="header-section">
+        <div class="container">
+            <h1>شروط الاستخدام والخدمة</h1>
+            <p>قبل البدء باستخدام سكوليرا، يرجى قراءة اتفاقية الاستخدام بعناية.</p>
         </div>
-    </article>
+    </header>
+
+    <main class="container">
+        <div class="content-card">
+            <p>
+                مرحباً بكم في **سكوليرا (Schoolera)**. باستخدامك لهذا البرنامج أو الموقع الإلكتروني، فإنك توافق على
+                الالتزام بالشروط والأحكام الموضحة أدناه. تم تصميم هذه الشروط لحفظ حقوق المؤسسة التعليمية والمطور على حد
+                سواء، ولضمان أفضل تجربة استخدام ممكنة.
+            </p>
+
+            <h2>1. تعريف الخدمة والمنتج</h2>
+            <p>
+                سكوليرا هو نظام برمجي مكتبي (Desktop Software) مخصص لإدارة المؤسسات التعليمية (مدارس، معاهد، مراكز
+                تدريب). يعمل البرنامج بنظام الرخصة الفردية المرتبطة بعتاد الجهاز (HWID)، ويتم توفيره "كما هو" مع
+                التزامنا بالتحسين المستمر.
+            </p>
+
+            <h2>2. نظام الترخيص (Licensing)</h2>
+            <ul>
+                <li>**رخصة مدى الحياة**: الرخصة التي يشتريها العميل صالحة للاستخدام للأبد على الجهاز الذي تم تفعيلها
+                    عليه، دون أي رسوم تجديد شهرية أو سنوية.</li>
+                <li>**الجهاز الواحد**: الرخصة الواحدة تدعم جهاز حاسوب واحد فقط. في حال رغب العميل في تشغيله على عدة
+                    أجهزة، يجب شراء رخص إضافية.</li>
+                <li>**تغيير العتاد**: في حال تلف الحاسوب أو تغيير القرص الصلب/اللوحة الأم، يمكن للعميل طلب "نقل الرخصة"
+                    لمرة واحدة مجاناً في السنة الأولى، وبعد ذلك قد تخضع العملية لرسوم تقنية بسيطة.</li>
+            </ul>
+
+            <div class="legal-box">
+                تنبيه هام: محاولة كسر حماية البرنامج أو الهندسة العكسية أو استخدام مولدات مفاتيح غير رسمية تؤدي فوراً
+                إلى إلغاء الرخصة والملاحقة القانونية بتهمة القرصنة الفكرية.
+            </div>
+
+            <h2>3. حقوق الملكية الفكرية</h2>
+            <p>
+                كافة العلامات التجارية، الأكواد البرمجية، التصاميم، والشعارات المرتبطة بسكوليرا هي ملكية فكرية حصرية
+                للمطور (ياسين عيشي). لا يحق للمستخدم إعادة بيع البرنامج، توزيعه، أو تعديل شفرته البرمجية دون إذن كتابي
+                مسبق.
+            </p>
+
+            <h2>4. التزامات المستخدم</h2>
+            <p>بصفتك مستخدماً للبرنامج، فإنك تلتزم بما يلي:</p>
+            <ul>
+                <li>إدخال بيانات صحيحة وقانونية.</li>
+                <li>تحمل المسؤولية الكاملة عن أمن الجهاز الذي يعمل عليه البرنامج.</li>
+                <li>عدم استخدام البرنامج في أي أنشطة تخالف القوانين المحلية للدولة التي تعمل فيها.</li>
+                <li>إبلاغنا فوراً في حال اكتشاف أي خلل برمج قد يؤثر على بيانات الطلاب.</li>
+            </ul>
+
+            <h2>5. سياسة التحديثات والدعم الفني</h2>
+            <p>
+                نحن ملتزمون بتقديم تحديثات دورية لتحسين الأداء وإضافة مميزات جديدة. يكون الحصول على التحديثات للإصدار
+                الذي اشتريته (مثلاً إصدار 2026) مجانياً تماماً. الدعم الفني متوفر عبر الواتساب والبريد الإلكتروني خلال
+                أوقات العمل الرسمية.
+            </p>
+
+            <h2>6. إخلاء المسؤولية (Disclaimer)</h2>
+            <p>
+                بما أن البرنامج يعمل محلياً، فإن المطور غير مسؤول عن:
+                <br>- فقدان البيانات الناتج عن أعطال في جهاز المستخدم (Hardware Failure).
+                <br>- مسح البيانات بالخطأ من قبل موظفي المؤسسة.
+                <br>- أي خسائر مادية ناتجة عن عدم عمل النسخ الاحتياطي اليدوي.
+                <br>نحث المستخدمين دائماً على اتباع "خطة النسخ الاحتياطي" الموصى بها في دليل الاستخدام.
+            </p>
+
+            <h2>7. إنهاء الخدمة</h2>
+            <p>
+                يحق لنا تعليق رخصة الاستخدام في حال ثبوت مخالفة العميل لأحد بنود هذه الاتفاقية، خاصة فيما يتعلق بمحاولات
+                القرصنة أو الاستخدام غير المصرح به على عدة أجهزة.
+            </p>
+
+            <h2>8. القانون المطبق</h2>
+            <p>
+                تخضع هذه الاتفاقية وتفسر وفقاً للقوانين المعمول بها في الجمهورية الجزائرية الديمقراطية الشعبية، وفي حال
+                نشوء أي نزاع، تكون المحاكم المختصة في (باتنة) هي جهة الفصل.
+            </p>
+
+            <h2>9. الاتفاق الكامل</h2>
+            <p>
+                تعتبر هذه الشروط هي الاتفاق الكامل بينك وبين سكوليرا فيما يخص استخدام البرنامج، ولا يعتد بأي تفاهمات
+                شفهية خارج هذه الوثيقة ما لم توثق خطياً.
+            </p>
+
+            <p style="text-align: center; margin-top: 3rem; color: var(--gray);">
+                بشرائك للبرنامج، أنت تصادق على أنك قرأت وفهمت هذه الشروط بالكامل.
+            </p>
+        </div>
+    </main>
 
     <!-- Same Footer as index.html -->
-        <footer class="main-footer"
+    <footer class="main-footer"
         style="background: #0f172a; color: white; padding: 80px 0 30px; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.05); text-align: right;">
         <!-- Subtle Background Decoration -->
         <div
@@ -397,7 +332,7 @@
             <!-- Brand & Mission -->
             <div class="footer-col">
                 <div style="margin-bottom: 25px;">
-                    <img src="../assets/img/Logo.webp" alt="Logo" style="height: 45px; margin-bottom: 10px;">
+                    <img src="assets/img/Logo.webp" alt="Logo" style="height: 45px; margin-bottom: 10px;">
                     <h3
                         style="font-size: 1.8rem; font-weight: 900; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                         سكوليرا</h3>
@@ -428,15 +363,15 @@
                     style="font-size: 1.3rem; margin-bottom: 30px; font-weight: 700; color: #fff; border-right: 4px solid var(--primary); padding-right: 15px;">
                     روابط سريعة</h4>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px;"><a href="../index.html"
+                    <li style="margin-bottom: 12px;"><a href="index.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">الصفحة الرئيسية</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../about.html"
+                    <li style="margin-bottom: 12px;"><a href="about.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">من نحن</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../blog.html"
+                    <li style="margin-bottom: 12px;"><a href="blog.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">المدونة التعليمية</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../testimonials.html"
+                    <li style="margin-bottom: 12px;"><a href="testimonials.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">شهادات النجاح</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../demo.html"
+                    <li style="margin-bottom: 12px;"><a href="demo.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">النسخة التجريبية</a></li>
                 </ul>
             </div>
@@ -447,16 +382,16 @@
                     style="font-size: 1.3rem; margin-bottom: 30px; font-weight: 700; color: #fff; border-right: 4px solid var(--primary); padding-right: 15px;">
                     مركز المساعدة</h4>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px;"><a href="../support.html"
+                    <li style="margin-bottom: 12px;"><a href="support.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">الدعم الفني المباشر</a>
                     </li>
-                    <li style="margin-bottom: 12px;"><a href="../faq.html"
+                    <li style="margin-bottom: 12px;"><a href="faq.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">الأسئلة المتكررة</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../privacy.html"
+                    <li style="margin-bottom: 12px;"><a href="privacy.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">سياسة الخصوصية</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../terms.html"
+                    <li style="margin-bottom: 12px;"><a href="terms.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">اتفاقية الاستخدام</a></li>
-                    <li style="margin-bottom: 12px;"><a href="../calculator.html"
+                    <li style="margin-bottom: 12px;"><a href="calculator.html"
                             style="color: #cbd5e1; text-decoration: none; transition: 0.3s;">حاسبة التوفير</a></li>
                 </ul>
             </div>
@@ -470,19 +405,22 @@
                     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                         <div
                             style="width: 40px; height: 40px; background: rgba(79, 70, 229, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                            <i class="fa-solid fa-phone"></i></div>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
                         <span style="font-weight: 600;">0660639890</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                         <div
                             style="width: 40px; height: 40px; background: rgba(79, 70, 229, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                            <i class="fa-solid fa-envelope"></i></div>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
                         <span style="font-weight: 600;">contact@schoolera.site</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <div
                             style="width: 40px; height: 40px; background: rgba(79, 70, 229, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                            <i class="fa-solid fa-location-dot"></i></div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
                         <span style="font-weight: 600;">باتنة، الجزائر</span>
                     </div>
                 </div>
@@ -497,7 +435,6 @@
                 الجزائر.</p>
         </div>
     </footer>
-    <script src="../script.js"></script>
 </body>
 
 </html>
