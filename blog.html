@@ -8,6 +8,7 @@
     <meta name="description"
         content="اكتشف أحدث المقالات والنصائح حول إدارة المدارس الخاصة والمراكز التعليمية في الوطن العربي. حلول تقنية، رقمنة التعليم، وقصص نجاح مع سكوليرا.">
     <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Cairo';
@@ -329,10 +330,13 @@
                 <a href="index.html">الرئيسية</a>
                 <a href="index.html#features">المميزات</a>
                 <a href="tutorials.html">الشروحات</a>
-                <a href="blog.html">المدونة</a>
+                <a href="blog.html" style="color: var(--primary);">المدونة</a>
                 <a href="testimonials.html">العملاء</a>
                 <a href="demo.html">التحميل</a>
                 <a href="faq.html">FAQ</a>
+                <div class="lang-switch">
+                    <a href="en/index.html" class="lang-btn">EN</a>
+                </div>
                 <a href="support.html" class="btn-primary" style="color: white !important;">الدعم الفني</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
@@ -746,6 +750,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
     <script src="script.js"></script>
 </body>
 

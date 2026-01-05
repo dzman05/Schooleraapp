@@ -35,6 +35,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
 
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- JSON-LD Structured Data (The Secret to Rich Snippets) -->
     <script type="application/ld+json">
     {
@@ -428,6 +431,34 @@
                 width: 80%;
                 margin: 0;
             }
+
+            .lang-switch {
+                order: -1;
+            }
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            background: rgba(79, 70, 229, 0.05);
+            padding: 4px;
+            border-radius: 50px;
+            border: 1px solid rgba(79, 70, 229, 0.1);
+        }
+
+        .lang-btn {
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 50px;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--primary);
+            color: white;
         }
 
         .hero {
@@ -1296,6 +1327,9 @@
                 <a href="testimonials.html">العملاء</a>
                 <a href="demo.html">التحميل</a>
                 <a href="faq.html">FAQ</a>
+                <div class="lang-switch">
+                    <a href="en/index.html" class="lang-btn">EN</a>
+                </div>
                 <a href="support.html" class="btn-primary" style="color: white !important;">الدعم الفني</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
@@ -1309,7 +1343,7 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container hero-content">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-left">
                 <span class="badge">الإصدار الاحترافي 2026</span>
                 <h1>أفضل نظام إدارة مدارس في العالم العربي <br><span class="gradient-text">Schoolera (سكوليرا)
                         2026</span></h1>
@@ -1326,7 +1360,7 @@
                     <i class="fa-solid fa-check-circle"></i> دفع مرة واحدة (Lifetime)
                 </div>
             </div>
-            <div class="hero-image-container">
+            <div class="hero-image-container" data-aos="fade-right">
                 <div class="hero-image-bg"></div>
                 <!-- Used the generated dashboard mockup here -->
                 <img src="assets/img/school_dashboard_mockup.webp"
@@ -2196,6 +2230,14 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

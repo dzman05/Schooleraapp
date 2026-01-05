@@ -8,6 +8,7 @@
     <meta name="description"
         content="شروحات فيديو تفصيلية لبرنامج سكوليرا (Schoolera). تعلم كيفية إضافة الدورات، إدارة الطلاب، التنبيهات، والتقارير المالية خطوة بخطوة.">
     <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         @font-face {
@@ -280,7 +281,10 @@
                 <a href="index.html#features">المميزات</a>
                 <a href="tutorials.html" style="color: var(--primary);">الشروحات</a>
                 <a href="blog.html">المدونة</a>
-                <a href="testimonials.html">العملاء</a>
+                <div class="lang-switch">
+                    <a href="en/index.html" class="lang-btn">EN</a>
+                </div>
+                <a href="support.html" class="btn-primary" style="color: white !important;">الدعم الفني</a>
                 <a href="demo.html">التحميل</a>
                 <a href="faq.html">FAQ</a>
                 <a href="support.html" class="btn-primary"
@@ -438,6 +442,11 @@
             });
         }
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

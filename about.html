@@ -8,6 +8,7 @@
     <meta name="description"
         content="تعرف على قصة سكوليرا (Schoolera)، النظام الرائد في إدارة المدارس. قصة المؤسس ياسين عيشي ورؤيتنا لتطوير التعليم في الوطن العربي من خلال الرقمنة والأمان.">
     <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Base Styles from index.html -->
     <style>
@@ -268,8 +269,9 @@
                 <a href="tutorials.html">الشروحات</a>
                 <a href="blog.html">المدونة</a>
                 <a href="testimonials.html">العملاء</a>
-                <a href="demo.html">التحميل</a>
-                <a href="faq.html">FAQ</a>
+                <div class="lang-switch">
+                    <a href="en/index.html" class="lang-btn">EN</a>
+                </div>
                 <a href="support.html" class="btn-primary" style="color: white !important;">الدعم الفني</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
@@ -491,8 +493,11 @@
             <p style="color: #64748b; font-size: 0.95rem;">&copy; 2026 <span
                     style="color: #fff; font-weight: 700;">Schoolera</span>. جميع الحقوق محفوظة. صُنع بكل فخر في
                 الجزائر.</p>
-        </div>
-    </footer>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({ duration: 800, once: true });
+            </script>
+            <script src="script.js"></script>
 </body>
 
 </html>
