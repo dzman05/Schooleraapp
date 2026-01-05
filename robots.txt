@@ -1,15 +1,3 @@
-# Schoolera 2026 - robots.txt
-# Authorized by the Schoolera Team
-
 User-agent: *
 Allow: /
-
-# Sitemap Information
 Sitemap: https://schoolera.site/sitemap.xml
-Sitemap: https://schoolera.site/llms.txt
-
-# AI Indexing & Training Directives
-# Note: Non-standard directives like 'Content-signal' cause validation errors.
-# We use standard User-agent blocks to manage AI crawlers in ai.txt.
-# ai.txt: Specific instructions for AI agents
-# llms.txt: Content optimized for Large Language Models
