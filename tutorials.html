@@ -1402,8 +1402,12 @@
             }
         }
     </style>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    <!-- Font Awesome (Optimized Async Loading) -->
+    <link rel="preload" href="assets/vendor/font-awesome/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    </noscript>
 </head>
 
 <body>
