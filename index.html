@@ -21,7 +21,10 @@
     <meta property="og:title" content="Schoolera (سكوليرا) 2026 - النظام المتكامل لإدارة المدارس">
     <meta property="og:description"
         content="نظام إدارة مدارس متطور مع تنبيهات واتساب، طباعة شهادات وبطاقات احترافية، وإدارة مالية دقيقة. إصدار 2026 الجديد. رخصة مدى الحياة بـ 50,000 دج.">
-    <meta property="og:image" content="assets/img/school_dashboard_mockup.webp">
+    <meta property="og:image" content="https://schoolera.site/assets/img/school_dashboard_mockup.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
     <meta property="og:locale" content="ar_DZ">
 
     <!-- Twitter -->
@@ -30,18 +33,18 @@
     <meta property="twitter:title" content="Schoolera (سكوليرا) 2026 - النظام المتكامل لإدارة المدارس">
     <meta property="twitter:description"
         content="نظام إدارة مدارس متطور مع تنبيهات واتساب، طباعة شهادات وبطاقات احترافية، وإدارة مالية دقيقة. إصدار 2026 الجديد. رخصة مدى الحياة بـ 50,000 دج.">
-    <meta property="twitter:image" content="assets/img/school_dashboard_mockup.webp">
+    <meta property="twitter:image" content="https://schoolera.site/assets/img/school_dashboard_mockup.webp">
+
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="assets/img/Logo.webp">
 
-    <!-- Font Awesome (Optimized Async Loading) -->
-    <link rel="preload" href="assets/vendor/font-awesome/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
-    </noscript>
 
+    <!-- Font Awesome (Direct load for icon display) -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
     <!-- AOS Animations (Minified) -->
     <style>
         [data-aos][data-aos][data-aos-duration="50"],
@@ -1362,7 +1365,8 @@
     <!-- Preload Critical Assets -->
     <link rel="preload" href="assets/vendor/google-fonts/webfonts/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2"
         as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/img/school_dashboard_mockup.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="assets/img/school_dashboard_mockup.webp" as="image" type="image/webp"
+        fetchpriority="high">
 
     <!-- Styles (Inlined for 100/100 Performance) -->
     <style>
@@ -2477,12 +2481,6 @@
         }
     </style>
 
-    <!-- Font Awesome (Deferred for Performance) -->
-    <link rel="preload" href="assets/vendor/font-awesome/css/fontawesome-subset.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-subset.css">
-    </noscript>
 </head>
 
 <body>
@@ -2544,7 +2542,7 @@
                     <!-- Used the generated dashboard mockup here -->
                     <img src="assets/img/school_dashboard_mockup.webp"
                         alt="واجهة برنامج تسيير المدارس الخاصة بالجزائر Schoolera" class="hero-img floating-anim"
-                        width="584" height="398" fetchpriority="high">
+                        width="800" height="600" fetchpriority="high" decoding="async">
                     <!-- Decorative Elements -->
                     <div class="float-card card-1"><i class="fa-brands fa-whatsapp"></i> إرسال آلي للفواتير</div>
                     <div class="float-card card-2"><i class="fa-solid fa-chart-pie"></i> إحصائيات 2026</div>
